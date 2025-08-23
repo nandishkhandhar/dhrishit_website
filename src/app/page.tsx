@@ -89,12 +89,12 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg mb-6 leading-relaxed">
-                I'm a passionate computer science student with a strong foundation in software development 
+                I&apos;m a passionate computer science student with a strong foundation in software development 
                 and a keen interest in emerging technologies. My goal is to leverage technology to solve 
                 real-world problems and make a positive impact.
               </p>
               <p className="text-lg leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source 
                 projects, or mentoring fellow students in programming fundamentals.
               </p>
             </div>
@@ -135,7 +135,7 @@ export default function Home() {
             <div className="border-l-4 border-blue-600 pl-6">
               <h3 className="text-xl font-semibold">Bachelor of Science in Computer Science</h3>
               <p className="text-gray-600 dark:text-gray-300">University Name • 2021 - 2025</p>
-              <p className="mt-2">GPA: 3.8/4.0 • Dean's List • Relevant Coursework: Data Structures, Algorithms, Software Engineering</p>
+              <p className="mt-2">GPA: 3.8/4.0 • Dean&apos;s List • Relevant Coursework: Data Structures, Algorithms, Software Engineering</p>
             </div>
             <div className="border-l-4 border-green-600 pl-6">
               <h3 className="text-xl font-semibold">High School Diploma</h3>
@@ -249,7 +249,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-12">
-            I'm always interested in new opportunities and collaborations. Let's connect!
+            I&apos;m always interested in new opportunities and collaborations. Let&apos;s connect!
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6">
