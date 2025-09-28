@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Awards() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-gray-900 dark:via-emerald-900/20 dark:to-teal-900/20">
@@ -76,7 +78,7 @@ export default function Awards() {
                   <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">FISO Certificate</h4>
                     <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
-                      <img src="/FISO.png" alt="FISO Biology Olympiad Certificate" className="w-full h-auto object-contain" />
+                      <Image src="/FISO.png" alt="FISO Biology Olympiad Certificate" width={800} height={600} className="w-full h-auto object-contain" />
                     </div>
                   </div>
                 </div>
@@ -103,7 +105,7 @@ export default function Awards() {
                   <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">ASSET Certificate</h4>
                     <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
-                      <img src="/ASSET.png" alt="ASSET Chemistry Certificate" className="w-full h-auto object-contain" />
+                      <Image src="/ASSET.png" alt="ASSET Chemistry Certificate" width={800} height={600} className="w-full h-auto object-contain" />
                     </div>
                   </div>
                 </div>
@@ -130,7 +132,7 @@ export default function Awards() {
                   <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">ICC Certificate</h4>
                     <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
-                      <img src="/ICC.jpeg" alt="International Chemistry Competition Certificate" className="w-full h-auto object-contain" />
+                      <Image src="/ICC.jpeg" alt="International Chemistry Competition Certificate" width={600} height={800} className="w-full h-auto object-contain" />
                     </div>
                   </div>
                 </div>
@@ -158,21 +160,21 @@ export default function Awards() {
                     <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">Fryer Contest Certificate</h4>
                       <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
-                        <img src="/Fryer.png" alt="Fryer Contest Certificate" className="w-full h-auto object-contain" />
+                        <Image src="/Fryer.png" alt="Fryer Contest Certificate" width={800} height={600} className="w-full h-auto object-contain" />
                       </div>
                     </div>
                     
                     <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">Fermat Contest Certificate</h4>
                       <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
-                        <img src="/Fermat.png" alt="Fermat Contest Certificate" className="w-full h-auto object-contain" />
+                        <Image src="/Fermat.png" alt="Fermat Contest Certificate" width={800} height={600} className="w-full h-auto object-contain" />
                       </div>
                     </div>
                     
                     <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">Hypatia Contest Certificate</h4>
                       <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
-                        <img src="/Hypatia.png" alt="Hypatia Contest Certificate" className="w-full h-auto object-contain" />
+                        <Image src="/Hypatia.png" alt="Hypatia Contest Certificate" width={800} height={600} className="w-full h-auto object-contain" />
                       </div>
                     </div>
                   </div>
@@ -201,7 +203,7 @@ export default function Awards() {
                     <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">HKIMO Certificate</h4>
                       <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
-                        <img src="/HKIMO.png" alt="HKIMO Certificate" className="w-full h-auto object-contain" />
+                        <Image src="/HKIMO.png" alt="HKIMO Certificate" width={800} height={600} className="w-full h-auto object-contain" />
                       </div>
                     </div>
                   </div>
