@@ -1,0 +1,236 @@
+export default function Publications() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-gray-900 dark:via-emerald-900/20 dark:to-teal-900/20">
+      <div className="container mx-auto px-6 py-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full mb-6">
+              <span className="text-3xl">📚</span>
+            </div>
+            <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              Literary Publications
+            </h1>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Creative writing and literary contributions exploring the intersection of science and art
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {/* Poetry Section */}
+            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">🌺</span>
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Poetry</h2>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="border-l-4 border-emerald-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    "Microscopic Worlds"
+                  </h3>
+                  <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
+                    Published in University Literary Review • Spring 2024
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    A collection of poems exploring the beauty and complexity found in cellular structures, 
+                    drawing parallels between microscopic life and human experience.
+                  </p>
+                  <div className="bg-emerald-50 dark:bg-emerald-900/20 p-4 rounded-lg italic">
+                    <p className="text-gray-700 dark:text-gray-300">
+                      "In the dance of organelles, / I see our own choreography, / 
+                      Each mitochondrion a beating heart, / Each nucleus a dreaming mind..."
+                    </p>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-teal-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    "Tidal Memories"
+                  </h3>
+                  <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
+                    Featured in Coastal Literary Magazine • Summer 2024
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    A poem reflecting on marine research experiences and the emotional connection 
+                    formed with ocean ecosystems during field work.
+                  </p>
+                  <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg italic">
+                    <p className="text-gray-700 dark:text-gray-300">
+                      "Salt-stained notebooks hold / the secrets of coral whispers, / 
+                      Each data point a story / of resilience beneath the waves..."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Essays Section */}
+            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">✍️</span>
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Essays & Articles</h2>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="border-l-4 border-cyan-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    "The Language of Leaves: A Personal Journey into Botany"
+                  </h3>
+                  <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
+                    Published in Nature Writing Quarterly • Fall 2023
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    A personal narrative exploring how studying plant biology transformed my understanding 
+                    of communication in nature, weaving together scientific observation and creative reflection.
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
+                      Nature Writing
+                    </span>
+                    <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
+                      Science Communication
+                    </span>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-emerald-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    "Building Bridges: Science Education in Underserved Communities"
+                  </h3>
+                  <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
+                    Featured in Educational Outreach Journal • Winter 2024
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    An analytical piece examining the importance of accessible science education and 
+                    sharing strategies developed through community tutoring experiences.
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
+                      Education
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
+                      Community Outreach
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Short Stories Section */}
+            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-cyan-100 dark:bg-cyan-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">📖</span>
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Short Fiction</h2>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="border-l-4 border-purple-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    "The Last Coral"
+                  </h3>
+                  <p className="text-purple-600 dark:text-purple-400 font-medium mb-3">
+                    Winner, Environmental Fiction Contest • University Press • 2024
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    A speculative fiction piece set in a future where marine biologists race to save 
+                    the last remaining coral reef. Draws from real research to create a compelling narrative 
+                    about conservation and hope.
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-sm">
+                      Science Fiction
+                    </span>
+                    <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
+                      Environmental
+                    </span>
+                    <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
+                      Award Winner
+                    </span>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-rose-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    "Lab Partners"
+                  </h3>
+                  <p className="text-rose-600 dark:text-rose-400 font-medium mb-3">
+                    Published in Campus Literary Annual • 2023
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    A humorous short story about the unexpected friendship that develops between 
+                    two very different biology students during a challenging molecular biology course.
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-rose-100 dark:bg-rose-900/50 text-rose-800 dark:text-rose-200 rounded-full text-sm">
+                      Humor
+                    </span>
+                    <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
+                      Academic Life
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Blog/Opinion Pieces */}
+            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">💭</span>
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Opinion & Commentary</h2>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    "Why Every Biology Student Should Write"
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">University Science Blog • March 2024</p>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
+                    Exploring how creative writing enhances scientific thinking and communication skills.
+                  </p>
+                </div>
+
+                <div className="p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    "The Poetry of Photosynthesis"
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">Science & Arts Magazine • January 2024</p>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
+                    Finding artistic inspiration in biological processes and natural phenomena.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Recognition */}
+            <div className="bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+                Literary Recognition
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">🏆</div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Environmental Fiction Award</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">University Press • 2024</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl mb-2">📝</div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Featured Writer</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Science Communication Workshop • 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
