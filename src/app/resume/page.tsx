@@ -60,7 +60,7 @@ export default function Resume() {
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Bachelor of Science in Biology</h3>
                   <p className="text-emerald-600 dark:text-emerald-400 font-medium">University Name • Expected Graduation: May 2025</p>
                   <p className="text-gray-600 dark:text-gray-300 mt-2">
-                    <strong>GPA:</strong> 3.85/4.0 • <strong>Major GPA:</strong> 3.92/4.0 • <strong>Dean's List:</strong> 4 semesters
+                    <strong>GPA:</strong> 3.85/4.0 • <strong>Major GPA:</strong> 3.92/4.0 • <strong>Dean&apos;s List:</strong> 4 semesters
                   </p>
                   <div className="mt-3">
                     <p className="text-gray-700 dark:text-gray-300"><strong>Relevant Coursework:</strong></p>

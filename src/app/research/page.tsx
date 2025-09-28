@@ -30,7 +30,7 @@ export default function Research() {
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                        "Microplastic Accumulation in Coral Reef Ecosystems: A Quantitative Analysis of Environmental Impact"
+                        &quot;Microplastic Accumulation in Coral Reef Ecosystems: A Quantitative Analysis of Environmental Impact&quot;
                       </h3>
                       <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
                         Marine Biology Research Journal • Vol. 45(3), 2024 • Impact Factor: 3.2
@@ -76,7 +76,7 @@ export default function Research() {
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                        "Genetic Diversity Assessment in Endangered Marine Species Using Environmental DNA Techniques"
+                        &quot;Genetic Diversity Assessment in Endangered Marine Species Using Environmental DNA Techniques&quot;
                       </h3>
                       <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
                         Conservation Genetics • Vol. 28(2), 2024 • Impact Factor: 2.8
@@ -132,7 +132,7 @@ export default function Research() {
               <div className="space-y-6">
                 <div className="border-l-4 border-cyan-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    "Climate Change Adaptation Strategies in Coastal Marine Ecosystems: A Multi-Species Analysis"
+                    &quot;Climate Change Adaptation Strategies in Coastal Marine Ecosystems: A Multi-Species Analysis&quot;
                   </h3>
                   <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
                     Submitted to Climate Change Biology • Under peer review since August 2024
@@ -163,7 +163,7 @@ export default function Research() {
                     Oral Presentation
                   </h3>
                   <h4 className="font-medium text-emerald-600 dark:text-emerald-400 mb-2">
-                    "Microplastic Impact on Coral Reef Health"
+                    &quot;Microplastic Impact on Coral Reef Health&quot;
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
                     International Marine Biology Conference • Miami, FL • June 2024
@@ -179,7 +179,7 @@ export default function Research() {
                     Poster Presentation
                   </h3>
                   <h4 className="font-medium text-teal-600 dark:text-teal-400 mb-2">
-                    "eDNA Applications in Conservation"
+                    &quot;eDNA Applications in Conservation&quot;
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
                     Society for Conservation Biology Annual Meeting • Boston, MA • July 2024
@@ -195,7 +195,7 @@ export default function Research() {
                     Lightning Talk
                   </h3>
                   <h4 className="font-medium text-cyan-600 dark:text-cyan-400 mb-2">
-                    "Student Research Spotlight"
+                    &quot;Student Research Spotlight&quot;
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
                     Regional Undergraduate Research Symposium • April 2024
@@ -211,7 +211,7 @@ export default function Research() {
                     Panel Discussion
                   </h3>
                   <h4 className="font-medium text-emerald-600 dark:text-emerald-400 mb-2">
-                    "Future of Marine Research"
+                    &quot;Future of Marine Research&quot;
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
                     Young Scientists Symposium • Virtual • March 2024

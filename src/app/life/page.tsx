@@ -22,8 +22,8 @@ export default function Life() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">My Philosophy</h2>
                 <div className="max-w-2xl mx-auto">
                   <p className="text-lg text-gray-700 dark:text-gray-300 italic">
-                    "Life, like biology, is about connection, adaptation, and growth. Every organism, every person, 
-                    every moment teaches us something about resilience and the beautiful complexity of existence."
+                    &quot;Life, like biology, is about connection, adaptation, and growth. Every organism, every person, 
+                    every moment teaches us something about resilience and the beautiful complexity of existence.&quot;
                   </p>
                 </div>
               </div>
@@ -185,17 +185,17 @@ export default function Life() {
                   <div className="space-y-4">
                     <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
                       <p className="text-sm text-gray-700 dark:text-gray-300 italic">
-                        "The complexity of a single cell contains more wonder than most people see in a lifetime."
+                        &quot;The complexity of a single cell contains more wonder than most people see in a lifetime.&quot;
                       </p>
                     </div>
                     <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
                       <p className="text-sm text-gray-700 dark:text-gray-300 italic">
-                        "Every research question answered leads to three new mysteries worth exploring."
+                        &quot;Every research question answered leads to three new mysteries worth exploring.&quot;
                       </p>
                     </div>
                     <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg">
                       <p className="text-sm text-gray-700 dark:text-gray-300 italic">
-                        "Science and art are two sides of the same curiosity about the world around us."
+                        &quot;Science and art are two sides of the same curiosity about the world around us.&quot;
                       </p>
                     </div>
                   </div>

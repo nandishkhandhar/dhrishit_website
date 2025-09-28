@@ -57,7 +57,7 @@ export default function PasswordProtection({ children }: PasswordProtectionProps
                 Protected Access
               </h1>
               <p className="text-gray-600 dark:text-gray-300">
-                Please enter the password to view Dhrishit's portfolio
+                Please enter the password to view Dhrishit&apos;s portfolio
               </p>
             </div>
 

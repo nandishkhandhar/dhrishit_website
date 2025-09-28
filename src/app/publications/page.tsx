@@ -28,7 +28,7 @@ export default function Publications() {
               <div className="space-y-6">
                 <div className="border-l-4 border-emerald-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    "Microscopic Worlds"
+                    &quot;Microscopic Worlds&quot;
                   </h3>
                   <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
                     Published in University Literary Review • Spring 2024
@@ -39,15 +39,15 @@ export default function Publications() {
                   </p>
                   <div className="bg-emerald-50 dark:bg-emerald-900/20 p-4 rounded-lg italic">
                     <p className="text-gray-700 dark:text-gray-300">
-                      "In the dance of organelles, / I see our own choreography, / 
-                      Each mitochondrion a beating heart, / Each nucleus a dreaming mind..."
+                      &quot;In the dance of organelles, / I see our own choreography, / 
+                      Each mitochondrion a beating heart, / Each nucleus a dreaming mind...&quot;
                     </p>
                   </div>
                 </div>
 
                 <div className="border-l-4 border-teal-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    "Tidal Memories"
+                    &quot;Tidal Memories&quot;
                   </h3>
                   <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
                     Featured in Coastal Literary Magazine • Summer 2024
@@ -58,8 +58,8 @@ export default function Publications() {
                   </p>
                   <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg italic">
                     <p className="text-gray-700 dark:text-gray-300">
-                      "Salt-stained notebooks hold / the secrets of coral whispers, / 
-                      Each data point a story / of resilience beneath the waves..."
+                      &quot;Salt-stained notebooks hold / the secrets of coral whispers, / 
+                      Each data point a story / of resilience beneath the waves...&quot;
                     </p>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function Publications() {
               <div className="space-y-6">
                 <div className="border-l-4 border-cyan-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    "The Language of Leaves: A Personal Journey into Botany"
+                    &quot;The Language of Leaves: A Personal Journey into Botany&quot;
                   </h3>
                   <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
                     Published in Nature Writing Quarterly • Fall 2023
@@ -99,7 +99,7 @@ export default function Publications() {
 
                 <div className="border-l-4 border-emerald-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    "Building Bridges: Science Education in Underserved Communities"
+                    &quot;Building Bridges: Science Education in Underserved Communities&quot;
                   </h3>
                   <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
                     Featured in Educational Outreach Journal • Winter 2024
@@ -132,7 +132,7 @@ export default function Publications() {
               <div className="space-y-6">
                 <div className="border-l-4 border-purple-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    "The Last Coral"
+                    &quot;The Last Coral&quot;
                   </h3>
                   <p className="text-purple-600 dark:text-purple-400 font-medium mb-3">
                     Winner, Environmental Fiction Contest • University Press • 2024
@@ -157,7 +157,7 @@ export default function Publications() {
 
                 <div className="border-l-4 border-rose-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    "Lab Partners"
+                    &quot;Lab Partners&quot;
                   </h3>
                   <p className="text-rose-600 dark:text-rose-400 font-medium mb-3">
                     Published in Campus Literary Annual • 2023
@@ -190,7 +190,7 @@ export default function Publications() {
               <div className="space-y-4">
                 <div className="p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                    "Why Every Biology Student Should Write"
+                    &quot;Why Every Biology Student Should Write&quot;
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">University Science Blog • March 2024</p>
                   <p className="text-gray-700 dark:text-gray-300 text-sm">
@@ -200,7 +200,7 @@ export default function Publications() {
 
                 <div className="p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                    "The Poetry of Photosynthesis"
+                    &quot;The Poetry of Photosynthesis&quot;
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">Science & Arts Magazine • January 2024</p>
                   <p className="text-gray-700 dark:text-gray-300 text-sm">

@@ -63,7 +63,7 @@ export default function Home() {
               Exploring the intersection of biology, conservation, and community
             </h2>
             <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-              From coral reef research to science tutoring, I'm driven by curiosity about the natural world 
+              From coral reef research to science tutoring, I&apos;m driven by curiosity about the natural world 
               and committed to making scientific knowledge accessible to everyone.
             </p>
           </div>

@@ -63,14 +63,14 @@ export default function Awards() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Dean's List Recognition
+                    Dean&apos;s List Recognition
                   </h3>
                   <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
                     University Honors • Fall 2022, Spring 2023, Fall 2023, Spring 2024
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
                     Consistent academic excellence with semester GPA of 3.7 or higher. 
-                    Maintained Dean's List status throughout junior and senior years.
+                    Maintained Dean&apos;s List status throughout junior and senior years.
                   </p>
                 </div>
               </div>
