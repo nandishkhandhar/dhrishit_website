@@ -28,38 +28,57 @@ export default function Publications() {
               <div className="space-y-6">
                 <div className="border-l-4 border-emerald-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    &quot;Microscopic Worlds&quot;
+                    Hornbill Article - &quot;The Silent Guardians of Our Coasts&quot;
                   </h3>
                   <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
-                    Published in University Literary Review • Spring 2024
+                    Published in Hornbill Magazine • BNHS • Spring 2024
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    A collection of poems exploring the beauty and complexity found in cellular structures, 
-                    drawing parallels between microscopic life and human experience.
+                    Featured article exploring the critical role of mangrove ecosystems in coastal protection 
+                    and biodiversity conservation, highlighting urgent conservation needs.
                   </p>
-                  <div className="bg-emerald-50 dark:bg-emerald-900/20 p-4 rounded-lg italic">
-                    <p className="text-gray-700 dark:text-gray-300">
-                      &quot;In the dance of organelles, / I see our own choreography, / 
-                      Each mitochondrion a beating heart, / Each nucleus a dreaming mind...&quot;
+                  <div className="bg-emerald-50 dark:bg-emerald-900/20 p-4 rounded-lg">
+                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                      &quot;Mangroves stand as nature&apos;s fortress against rising seas, their intricate root systems 
+                      weaving together stories of resilience, adaptation, and the delicate balance of coastal life.&quot;
                     </p>
                   </div>
                 </div>
 
                 <div className="border-l-4 border-teal-500 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    &quot;Tidal Memories&quot;
+                    &quot;100 Feet Under&quot;
                   </h3>
                   <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
-                    Featured in Coastal Literary Magazine • Summer 2024
+                    Published in Marine Science Quarterly • Summer 2024
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    A poem reflecting on marine research experiences and the emotional connection 
-                    formed with ocean ecosystems during field work.
+                    Personal narrative documenting deep-sea diving experiences and underwater research encounters, 
+                    capturing the wonder and challenges of marine biology fieldwork.
                   </p>
-                  <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg italic">
-                    <p className="text-gray-700 dark:text-gray-300">
-                      &quot;Salt-stained notebooks hold / the secrets of coral whispers, / 
-                      Each data point a story / of resilience beneath the waves...&quot;
+                  <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                      &quot;At 100 feet below, silence speaks volumes. Each bubble carries stories of ancient coral cities 
+                      and the urgent whispers of a changing ocean.&quot;
+                    </p>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-cyan-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    &quot;The Tale of Vinculoca&quot;
+                  </h3>
+                  <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
+                    Featured in Biology Literature Review • Fall 2023
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Creative scientific writing piece exploring the fascinating world of marine symbiosis 
+                    through the lens of coral-algae relationships, blending scientific accuracy with storytelling.
+                  </p>
+                  <div className="bg-cyan-50 dark:bg-cyan-900/20 p-4 rounded-lg">
+                    <p className="text-gray-700 dark:text-gray-300 text-sm">
+                      &quot;In the tale of Vinculoca, we discover that the smallest partnerships 
+                      can build the greatest structures on Earth.&quot;
                     </p>
                   </div>
                 </div>

@@ -19,18 +19,18 @@ export default function Awards() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🥇</span>
+                  <span className="text-2xl">🌍</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Outstanding Biology Student Award
+                    Earth Prize Asian Scholar Award
                   </h3>
                   <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
-                    University Biology Department • 2024
+                    Earth Prize Foundation • 2024
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Recognized for exceptional academic performance, research contributions, and leadership in the biology program. 
-                    Awarded to the top graduating biology student based on GPA, research impact, and community involvement.
+                    Prestigious international recognition for outstanding contributions to environmental research and conservation efforts. 
+                    Selected as one of the top young environmental leaders across Asia for innovative research in marine biology.
                   </p>
                 </div>
               </div>
@@ -39,18 +39,18 @@ export default function Awards() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🔬</span>
+                  <span className="text-2xl">⚗️</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Research Excellence Certificate
+                    International Chemistry Quiz Winner
                   </h3>
                   <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
-                    National Science Foundation • 2024
+                    International Chemistry Olympiad Foundation • 2023
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Awarded for outstanding undergraduate research in marine biology and contributions to coral reef 
-                    ecosystem studies. Project resulted in publication in peer-reviewed journal.
+                    Secured top position in the prestigious international chemistry competition, demonstrating exceptional 
+                    knowledge in organic, inorganic, and physical chemistry concepts among global participants.
                   </p>
                 </div>
               </div>
@@ -59,18 +59,18 @@ export default function Awards() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🧬</span>
+                  <span className="text-2xl">🧪</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Dean&apos;s List Recognition
+                    Avogadro Chemistry Contest - Gold Medal
                   </h3>
                   <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
-                    University Honors • Fall 2022, Spring 2023, Fall 2023, Spring 2024
+                    National Chemistry Society • 2023
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Consistent academic excellence with semester GPA of 3.7 or higher. 
-                    Maintained Dean&apos;s List status throughout junior and senior years.
+                    Achieved gold medal recognition in the prestigious Avogadro Chemistry Contest, competing against 
+                    top chemistry students nationwide in advanced theoretical and practical chemistry challenges.
                   </p>
                 </div>
               </div>
@@ -79,18 +79,18 @@ export default function Awards() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🌿</span>
+                  <span className="text-2xl">📊</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Environmental Leadership Certificate
+                    CEMC Mathematics Competitions - Multiple Awards
                   </h3>
                   <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
-                    Campus Sustainability Office • 2023
+                    University of Waterloo • 2022-2023
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Completed comprehensive program in environmental leadership, sustainability practices, 
-                    and community engagement. Led campus-wide initiatives reducing waste by 25%.
+                    Distinguished performance in Fryer, Fermat, and Hypatia mathematics contests, achieving 
+                    certificates of distinction in advanced mathematical problem-solving and analytical reasoning.
                   </p>
                 </div>
               </div>
@@ -99,18 +99,18 @@ export default function Awards() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🦋</span>
+                  <span className="text-2xl">📊</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Biodiversity Conservation Award
+                    HKIMO Math Olympiad - Bronze Medal
                   </h3>
                   <p className="text-purple-600 dark:text-purple-400 font-medium mb-3">
-                    State Wildlife Federation • 2023
+                    Hong Kong International Mathematical Olympiad • 2023
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Recognition for volunteer efforts in native species protection and habitat restoration. 
-                    Contributed over 200 hours to conservation projects across the state.
+                    Earned bronze medal in the highly competitive international mathematics olympiad, 
+                    demonstrating exceptional problem-solving skills among global participants.
                   </p>
                 </div>
               </div>
@@ -119,18 +119,38 @@ export default function Awards() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-red-400 to-rose-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">📜</span>
+                  <span className="text-2xl">🧬</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Laboratory Safety Certification
+                    FISO Biology Olympiad - Silver Medal
                   </h3>
                   <p className="text-rose-600 dark:text-rose-400 font-medium mb-3">
-                    National Safety Council • 2022
+                    International Biology Olympiad Foundation • 2022
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Comprehensive training in laboratory safety protocols, chemical handling, 
-                    and emergency procedures. Required for all research positions.
+                    Achieved silver medal recognition in the prestigious international biology olympiad, 
+                    competing in advanced topics including molecular biology, ecology, and genetics.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">🤿</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    PADI Open Water Diver Certificate
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">
+                    Professional Association of Diving Instructors • 2023
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Certified open water diver qualification enabling underwater research capabilities 
+                    for marine biology fieldwork and coral reef studies.
                   </p>
                 </div>
               </div>

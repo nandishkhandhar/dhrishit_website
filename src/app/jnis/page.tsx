@@ -8,10 +8,10 @@ export default function JNIS() {
               <span className="text-3xl">🏛️</span>
             </div>
             <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              JNIS
+              Life at JNIS
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Junior National Investigator Society - Advancing scientific inquiry and research excellence
+              Junior National Investigator Society - Leadership, education, and artistic expression
             </p>
           </div>
 
@@ -38,45 +38,35 @@ export default function JNIS() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">My Role & Contributions</h2>
               
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-6">
-                  <div className="border-l-4 border-emerald-500 pl-6">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Research Coordinator</h3>
-                    <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">2023 - Present</p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Leading collaborative research initiatives between JNIS chapters across different universities. 
-                      Coordinating multi-institutional studies on marine ecosystem conservation.
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-teal-500 pl-6">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Peer Mentor</h3>
-                    <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">2022 - Present</p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Mentoring first and second-year biology students in research methodology, laboratory 
-                      techniques, and scientific writing. Guided 15+ students through their first research projects.
-                    </p>
-                  </div>
+              <div className="grid md:grid-cols-1 gap-8">
+                <div className="border-l-4 border-emerald-500 pl-6">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Captain - JNIS Leadership</h3>
+                  <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">2023 - Present</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Leading the JNIS chapter with responsibilities including organizing scientific events, 
+                    coordinating research collaborations, mentoring junior members, and representing the society 
+                    in inter-institutional academic competitions and conferences.
+                  </p>
                 </div>
 
-                <div className="space-y-6">
-                  <div className="border-l-4 border-cyan-500 pl-6">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Outreach Director</h3>
-                    <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">2023 - Present</p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Organizing science outreach programs for local high schools and community groups. 
-                      Developed interactive workshops on marine biology and environmental conservation.
-                    </p>
-                  </div>
+                <div className="border-l-4 border-teal-500 pl-6">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Art Workshop Instructor</h3>
+                  <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">2022 - 2024</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Designed and conducted art workshops for children, teaching over 100+ kids various art techniques 
+                    including scientific illustration, nature sketching, and creative expression. Combined artistic skills 
+                    with biology education to make science more accessible and engaging.
+                  </p>
+                </div>
 
-                  <div className="border-l-4 border-emerald-500 pl-6">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Ethics Committee</h3>
-                    <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">2024 - Present</p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Serving on the ethics review board for student research proposals, ensuring compliance 
-                      with research standards and animal welfare protocols.
-                    </p>
-                  </div>
+                <div className="border-l-4 border-cyan-500 pl-6">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Art & Photography Exhibition</h3>
+                  <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">Annual Event • 2023 & 2024</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Organized and curated exhibitions showcasing scientific art and nature photography. 
+                    Successfully sold 15+ pieces featuring marine life illustrations and underwater photography, 
+                    with proceeds supporting JNIS educational initiatives and conservation projects.
+                  </p>
                 </div>
               </div>
             </div>
@@ -215,24 +205,24 @@ export default function JNIS() {
             {/* Impact Metrics */}
             <div className="bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-                JNIS Impact
+                JNIS Impact & Achievements
               </h3>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">15+</div>
-                  <p className="text-gray-600 dark:text-gray-300">Students Mentored</p>
+                  <div className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">100+</div>
+                  <p className="text-gray-600 dark:text-gray-300">Kids Taught Art</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-2">8</div>
-                  <p className="text-gray-600 dark:text-gray-300">University Collaborations</p>
+                  <div className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-2">15+</div>
+                  <p className="text-gray-600 dark:text-gray-300">Artworks Sold</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-2">25</div>
-                  <p className="text-gray-600 dark:text-gray-300">Outreach Events</p>
+                  <div className="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-2">2</div>
+                  <p className="text-gray-600 dark:text-gray-300">Annual Exhibitions</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">3</div>
-                  <p className="text-gray-600 dark:text-gray-300">Years Active</p>
+                  <div className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">1</div>
+                  <p className="text-gray-600 dark:text-gray-300">Captain Position</p>
                 </div>
               </div>
             </div>

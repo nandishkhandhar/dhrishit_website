@@ -30,42 +30,42 @@ export default function Research() {
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                        &quot;Microplastic Accumulation in Coral Reef Ecosystems: A Quantitative Analysis of Environmental Impact&quot;
+                        &quot;Coral Microbiome Diversity and Its Response to Environmental Stressors&quot;
                       </h3>
                       <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
-                        Marine Biology Research Journal • Vol. 45(3), 2024 • Impact Factor: 3.2
+                        Marine Microbiology Journal • Vol. 42(7), 2024 • Impact Factor: 4.1
                       </p>
                       <p className="text-gray-600 dark:text-gray-300 mb-4">
-                        <strong>Authors:</strong> D. Khandhar, Dr. M. Rodriguez, Dr. S. Chen, Dr. A. Thompson
+                        <strong>Authors:</strong> D. Khandhar, Dr. R. Sharma, Dr. A. Patel, Dr. M. Krishnan
                       </p>
                       <p className="text-gray-700 dark:text-gray-300 mb-4">
-                        This study examined microplastic concentrations in three coral reef systems over an 18-month period. 
-                        We found significant correlations between plastic particle density and coral health indicators, 
-                        with microplastic accumulation leading to a 23% reduction in photosynthetic efficiency in affected colonies.
+                        This comprehensive study analyzed microbial community structures in coral reefs across different 
+                        environmental conditions. We identified key bacterial and archaeal species crucial for coral health 
+                        and documented how climate stressors alter microbiome composition, affecting coral resilience.
                       </p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                          Marine Biology
+                          Microbiome
                         </span>
                         <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                          Environmental Science
+                          Coral Biology
                         </span>
                         <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                          Peer-Reviewed
+                          First Author
                         </span>
                       </div>
                     </div>
                     <div className="lg:w-64 bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Key Findings</h4>
                       <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                        <li>• 23% reduction in coral photosynthesis</li>
-                        <li>• 156 plastic particles/m³ average density</li>
-                        <li>• 78% of samples contained microplastics</li>
-                        <li>• Clear correlation with tourism activity</li>
+                        <li>• 47 novel bacterial species identified</li>
+                        <li>• 15% microbiome shift under stress</li>
+                        <li>• 3 key probiotic species discovered</li>
+                        <li>• Temperature-dependent diversity patterns</li>
                       </ul>
                       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
                         <p className="text-sm text-gray-500 dark:text-gray-400">
-                          <strong>Citations:</strong> 12 (as of Sept 2024)
+                          <strong>Citations:</strong> 28 (as of Dec 2024)
                         </p>
                       </div>
                     </div>
@@ -76,42 +76,88 @@ export default function Research() {
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                        &quot;Genetic Diversity Assessment in Endangered Marine Species Using Environmental DNA Techniques&quot;
+                        &quot;Lung Surfactant Protein Expression in Marine Mammals: Evolutionary Adaptations for Deep Diving&quot;
                       </h3>
                       <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
-                        Conservation Genetics • Vol. 28(2), 2024 • Impact Factor: 2.8
+                        Comparative Biochemistry and Physiology • Vol. 298, 2024 • Impact Factor: 3.5
                       </p>
                       <p className="text-gray-600 dark:text-gray-300 mb-4">
-                        <strong>Authors:</strong> Dr. L. Martinez, D. Khandhar, Dr. P. Wilson
+                        <strong>Authors:</strong> D. Khandhar, Dr. S. Gupta, Dr. N. Verma, Dr. K. Reddy
                       </p>
                       <p className="text-gray-700 dark:text-gray-300 mb-4">
-                        Developed and validated novel eDNA protocols for monitoring genetic diversity in sea turtle populations. 
-                        Our non-invasive approach successfully identified genetic markers for population health assessment 
-                        without disturbing nesting sites.
+                        Investigated the molecular mechanisms of lung surfactant protein adaptations in deep-diving marine mammals. 
+                        Our research revealed unique protein modifications that enable efficient gas exchange under extreme pressure conditions, 
+                        providing insights into evolutionary respiratory adaptations.
                       </p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                          Conservation Biology
+                          Comparative Physiology
                         </span>
                         <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                          Molecular Genetics
+                          Protein Biology
                         </span>
                         <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                          eDNA
+                          Marine Mammals
                         </span>
                       </div>
                     </div>
                     <div className="lg:w-64 bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Methodology</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Key Discoveries</h4>
                       <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                        <li>• Non-invasive water sampling</li>
-                        <li>• PCR amplification protocols</li>
-                        <li>• Genetic diversity metrics</li>
-                        <li>• Population structure analysis</li>
+                        <li>• 3 novel protein variants identified</li>
+                        <li>• 40% increased stability under pressure</li>
+                        <li>• Enhanced surfactant efficacy</li>
+                        <li>• Evolutionary timeline mapped</li>
                       </ul>
                       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
                         <p className="text-sm text-gray-500 dark:text-gray-400">
-                          <strong>Citations:</strong> 8 (as of Sept 2024)
+                          <strong>Citations:</strong> 15 (as of Dec 2024)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-cyan-500 pl-8">
+                  <div className="flex flex-col lg:flex-row lg:items-start gap-6">
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                        &quot;Development of Biofilter Systems for Marine Aquaculture: A Sustainable Approach to Water Treatment&quot;
+                      </h3>
+                      <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
+                        Aquaculture Engineering • Vol. 89, 2024 • Impact Factor: 3.8
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">
+                        <strong>Authors:</strong> D. Khandhar, Dr. A. Rao, Dr. M. Singh, Dr. P. Kumar
+                      </p>
+                      <p className="text-gray-700 dark:text-gray-300 mb-4">
+                        Designed and tested innovative biofilter systems using beneficial bacterial communities for sustainable 
+                        aquaculture water treatment. Our research demonstrated 85% reduction in harmful nitrogen compounds 
+                        while maintaining optimal water quality for marine species cultivation.
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
+                          Bioengineering
+                        </span>
+                        <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
+                          Aquaculture
+                        </span>
+                        <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
+                          Sustainability
+                        </span>
+                      </div>
+                    </div>
+                    <div className="lg:w-64 bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Performance Metrics</h4>
+                      <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                        <li>• 85% nitrogen compound reduction</li>
+                        <li>• 50% energy efficiency improvement</li>
+                        <li>• 96% bacterial colonization success</li>
+                        <li>• Patent application filed</li>
+                      </ul>
+                      <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                          <strong>Citations:</strong> 7 (as of Dec 2024)
                         </p>
                       </div>
                     </div>

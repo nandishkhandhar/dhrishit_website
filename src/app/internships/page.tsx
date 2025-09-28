@@ -21,28 +21,29 @@ export default function Internships() {
                 <div className="w-3 h-3 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Research Intern - Marine Biology Lab
+                    Research Intern - BNHS Navi Mumbai
                   </h3>
                   <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
-                    Ocean Research Institute • Summer 2024
+                    Bombay Natural History Society • Summer 2024
                   </p>
                   <div className="prose prose-gray dark:prose-invert max-w-none">
                     <ul className="space-y-2">
-                      <li>Conducted field research on coral reef ecosystems and biodiversity assessment</li>
-                      <li>Analyzed water quality parameters and their impact on marine life populations</li>
-                      <li>Collaborated on a research paper examining microplastic effects on marine organisms</li>
-                      <li>Utilized advanced microscopy techniques for plankton identification and counting</li>
+                      <li>Conducted biodiversity surveys and wildlife monitoring in Mumbai&apos;s urban ecosystems</li>
+                      <li>Assisted in research on urban bird populations and their adaptation patterns</li>
+                      <li>Participated in conservation education programs for local communities</li>
+                      <li>Documented flora and fauna species using field identification techniques</li>
+                      <li>Contributed to BNHS research database with field observations and data collection</li>
                     </ul>
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                      Marine Biology
+                      Urban Ecology
                     </span>
                     <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                      Field Research
+                      Wildlife Conservation
                     </span>
                     <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                      Data Analysis
+                      Biodiversity
                     </span>
                   </div>
                 </div>
@@ -54,28 +55,29 @@ export default function Internships() {
                 <div className="w-3 h-3 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Laboratory Assistant - Molecular Biology
+                    Marine Research Intern - Coastal Impact Goa
                   </h3>
                   <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
-                    University Research Lab • Fall 2023 - Spring 2024
+                    Coastal Impact Research Organization • Winter 2023
                   </p>
                   <div className="prose prose-gray dark:prose-invert max-w-none">
                     <ul className="space-y-2">
-                      <li>Assisted in DNA extraction and PCR amplification protocols</li>
-                      <li>Maintained cell cultures and performed viability assays</li>
-                      <li>Prepared reagents and maintained laboratory equipment</li>
-                      <li>Documented experimental procedures and results in laboratory notebooks</li>
+                      <li>Studied coastal erosion patterns and their impact on marine ecosystems</li>
+                      <li>Conducted water quality assessments in Goa&apos;s coastal waters</li>
+                      <li>Analyzed the effects of tourism on coral reef health and marine biodiversity</li>
+                      <li>Participated in beach clean-up drives and plastic pollution monitoring</li>
+                      <li>Collaborated on developing sustainable coastal management strategies</li>
                     </ul>
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                      Molecular Biology
+                      Marine Biology
                     </span>
                     <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                      PCR
+                      Coastal Ecology
                     </span>
                     <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                      Cell Culture
+                      Environmental Impact
                     </span>
                   </div>
                 </div>
@@ -87,28 +89,29 @@ export default function Internships() {
                 <div className="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Volunteer Research Assistant - Ecology Field Station
+                    Research Assistant - Microbiome Lab Mumbai
                   </h3>
                   <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
-                    National Park Service • Summer 2023
+                    Microbiome Research Institute • Fall 2023
                   </p>
                   <div className="prose prose-gray dark:prose-invert max-w-none">
                     <ul className="space-y-2">
-                      <li>Participated in wildlife population surveys and habitat monitoring</li>
-                      <li>Collected and analyzed soil samples for nutrient content assessment</li>
-                      <li>Assisted in bird banding operations and migration tracking studies</li>
-                      <li>Contributed to environmental education programs for park visitors</li>
+                      <li>Assisted in coral microbiome research and microbial community analysis</li>
+                      <li>Performed DNA extraction and sequencing preparation for microbial samples</li>
+                      <li>Analyzed microbiome data using bioinformatics tools and software</li>
+                      <li>Maintained sterile laboratory conditions for microbial culture work</li>
+                      <li>Contributed to research on coral-microbe interactions and symbiosis</li>
                     </ul>
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                      Ecology
+                      Microbiome
                     </span>
                     <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                      Wildlife Biology
+                      Bioinformatics
                     </span>
                     <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                      Conservation
+                      Molecular Biology
                     </span>
                   </div>
                 </div>

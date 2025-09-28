@@ -15,27 +15,31 @@ export default function Community() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-1 gap-8 mb-12">
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">🧪</span>
+                  <span className="text-2xl">🌊</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Science Tutor</h3>
-                  <p className="text-emerald-600 dark:text-emerald-400">Community Learning Center</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Time and Tide</h3>
+                  <p className="text-emerald-600 dark:text-emerald-400">Marine Conservation Initiative</p>
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Providing free biology and chemistry tutoring to high school students from underserved communities, 
-                helping them prepare for college-level science courses.
+                Led community awareness campaigns about tidal patterns and their impact on coastal ecosystems. 
+                Organized beach clean-up drives and educated local communities about marine conservation, 
+                reaching over 200 participants across coastal areas.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Education
+                  Marine Conservation
                 </span>
                 <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                  Mentoring
+                  Community Outreach
+                </span>
+                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
+                  Environmental Education
                 </span>
               </div>
             </div>
@@ -43,23 +47,27 @@ export default function Community() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900/50 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">🌿</span>
+                  <span className="text-2xl">🌱</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Environmental Club Leader</h3>
-                  <p className="text-teal-600 dark:text-teal-400">University Biology Club</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Project GreytoGrow</h3>
+                  <p className="text-teal-600 dark:text-teal-400">Urban Greening Initiative</p>
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Leading campus sustainability initiatives including native plant restoration projects, 
-                recycling programs, and environmental awareness campaigns.
+                Spearheaded an urban reforestation project transforming grey concrete spaces into green areas. 
+                Collaborated with local authorities to plant over 500 native trees and create community gardens 
+                in urban neighborhoods, improving air quality and biodiversity.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Leadership
+                  Urban Ecology
                 </span>
                 <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
                   Sustainability
+                </span>
+                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
+                  Community Development
                 </span>
               </div>
             </div>
@@ -67,47 +75,27 @@ export default function Community() {
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-cyan-100 dark:bg-cyan-900/50 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">🦋</span>
+                  <span className="text-2xl">🤝</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Nature Center Volunteer</h3>
-                  <p className="text-cyan-600 dark:text-cyan-400">Local Wildlife Sanctuary</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">NGO Volunteer</h3>
+                  <p className="text-cyan-600 dark:text-cyan-400">Wildlife Conservation NGO</p>
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Conducting guided nature walks, maintaining butterfly gardens, and educating visitors 
-                about local ecosystems and wildlife conservation efforts.
+                Volunteered with local wildlife conservation NGO to support endangered species protection programs. 
+                Assisted in wildlife rehabilitation efforts, conducted educational workshops for school children, 
+                and participated in habitat restoration projects across protected areas.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Conservation
-                </span>
-                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                  Public Speaking
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">📚</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Science Fair Judge</h3>
-                  <p className="text-emerald-600 dark:text-emerald-400">Regional Science Competition</p>
-                </div>
-              </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Evaluating student research projects in biology and environmental science categories, 
-                providing constructive feedback to inspire the next generation of scientists.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Evaluation
+                  Wildlife Conservation
                 </span>
                 <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                  STEM Advocacy
+                  Education
+                </span>
+                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
+                  Habitat Restoration
                 </span>
               </div>
             </div>
