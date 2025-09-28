@@ -18,6 +18,26 @@ export default function Awards() {
           <div className="space-y-8">
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">🤿</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    PADI Open Water Diver Certificate
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">
+                    Professional Association of Diving Instructors • 2023
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Certified open water diver qualification enabling underwater research capabilities 
+                    for marine biology fieldwork and coral reef studies.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
+              <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-2xl">🌍</span>
                 </div>
@@ -38,20 +58,27 @@ export default function Awards() {
 
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">⚗️</span>
+                <div className="w-16 h-16 bg-gradient-to-br from-red-400 to-rose-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">🧬</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    International Chemistry Quiz Winner
+                    FISO Biology Olympiad - Silver Medal
                   </h3>
-                  <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
-                    International Chemistry Olympiad Foundation • 2023
+                  <p className="text-rose-600 dark:text-rose-400 font-medium mb-3">
+                    International Biology Olympiad Foundation • 2022
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Secured top position in the prestigious international chemistry competition, demonstrating exceptional 
-                    knowledge in organic, inorganic, and physical chemistry concepts among global participants.
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Achieved silver medal recognition in the prestigious international biology olympiad, 
+                    competing in advanced topics including molecular biology, ecology, and genetics.
                   </p>
+                  
+                  <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">FISO Certificate</h4>
+                    <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
+                      <img src="/FISO.png" alt="FISO Biology Olympiad Certificate" className="w-full h-auto object-contain" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -63,15 +90,49 @@ export default function Awards() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Avogadro Chemistry Contest - Gold Medal
+                    ASSET Chemistry Competition - Excellence Award
                   </h3>
                   <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-3">
-                    National Chemistry Society • 2023
+                    Educational Testing Service • 2023
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Achieved gold medal recognition in the prestigious Avogadro Chemistry Contest, competing against 
-                    top chemistry students nationwide in advanced theoretical and practical chemistry challenges.
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Received excellence recognition in the ASSET chemistry assessment, demonstrating 
+                    superior performance in chemical principles and analytical problem-solving skills.
                   </p>
+                  
+                  <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">ASSET Certificate</h4>
+                    <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
+                      <img src="/ASSET.png" alt="ASSET Chemistry Certificate" className="w-full h-auto object-contain" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">⚗️</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    International Chemistry Quiz Winner
+                  </h3>
+                  <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
+                    International Chemistry Competition • 2023
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Secured top position in the prestigious international chemistry quiz, demonstrating exceptional 
+                    knowledge in organic, inorganic, and physical chemistry concepts among global participants.
+                  </p>
+                  
+                  <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">ICC Certificate</h4>
+                    <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
+                      <img src="/ICC.jpeg" alt="International Chemistry Competition Certificate" className="w-full h-auto object-contain" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -88,10 +149,33 @@ export default function Awards() {
                   <p className="text-emerald-600 dark:text-emerald-400 font-medium mb-3">
                     University of Waterloo • 2022-2023
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Distinguished performance in Fryer, Fermat, and Hypatia mathematics contests, achieving 
                     certificates of distinction in advanced mathematical problem-solving and analytical reasoning.
                   </p>
+                  
+                  <div className="space-y-6">
+                    <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">Fryer Contest Certificate</h4>
+                      <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
+                        <img src="/Fryer.png" alt="Fryer Contest Certificate" className="w-full h-auto object-contain" />
+                      </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">Fermat Contest Certificate</h4>
+                      <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
+                        <img src="/Fermat.png" alt="Fermat Contest Certificate" className="w-full h-auto object-contain" />
+                      </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">Hypatia Contest Certificate</h4>
+                      <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
+                        <img src="/Hypatia.png" alt="Hypatia Contest Certificate" className="w-full h-auto object-contain" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -108,98 +192,25 @@ export default function Awards() {
                   <p className="text-purple-600 dark:text-purple-400 font-medium mb-3">
                     Hong Kong International Mathematical Olympiad • 2023
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Earned bronze medal in the highly competitive international mathematics olympiad, 
                     demonstrating exceptional problem-solving skills among global participants.
                   </p>
+                  
+                  <div className="max-w-4xl">
+                    <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3 text-center">HKIMO Certificate</h4>
+                      <div className="border-2 border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden bg-white">
+                        <img src="/HKIMO.png" alt="HKIMO Certificate" className="w-full h-auto object-contain" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-red-400 to-rose-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🧬</span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    FISO Biology Olympiad - Silver Medal
-                  </h3>
-                  <p className="text-rose-600 dark:text-rose-400 font-medium mb-3">
-                    International Biology Olympiad Foundation • 2022
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Achieved silver medal recognition in the prestigious international biology olympiad, 
-                    competing in advanced topics including molecular biology, ecology, and genetics.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🤿</span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    PADI Open Water Diver Certificate
-                  </h3>
-                  <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">
-                    Professional Association of Diving Instructors • 2023
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Certified open water diver qualification enabling underwater research capabilities 
-                    for marine biology fieldwork and coral reef studies.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <div className="mt-12 bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-              Professional Certifications
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-lg">✓</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">CPR/First Aid Certified</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">American Red Cross • Valid through 2025</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-lg">✓</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">SCUBA Diving Certified</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">PADI Open Water • 2023</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-lg">✓</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Wildlife Handling License</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">State Department of Natural Resources • 2023</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-lg">✓</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Microscopy Certification</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Advanced Imaging Institute • 2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

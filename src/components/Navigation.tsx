@@ -12,7 +12,6 @@ const navigationItems = [
   { name: 'Resume', href: '/resume' },
   { name: 'Publications', href: '/publications' },
   { name: 'Research', href: '/research' },
-  { name: 'Life', href: '/life' },
   { name: 'JNIS', href: '/jnis' },
 ];
 
@@ -21,23 +20,23 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 border-b border-emerald-200 dark:border-emerald-800 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 py-4">
+    <nav className="fixed top-0 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-2xl z-50 border-b border-emerald-200/30 dark:border-emerald-700/20 shadow-2xl">
+      <div className="max-w-7xl mx-auto px-6 py-5">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105">
             Dhrishit Khandhar
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex space-x-8">
+          <div className="hidden lg:flex space-x-1">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`transition-colors font-medium ${
+                className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 ${
                   pathname === item.href
-                    ? 'text-emerald-600 dark:text-emerald-400'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400'
+                    ? 'text-white bg-gradient-to-r from-emerald-500 to-teal-600 shadow-lg shadow-emerald-500/25'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/80 dark:hover:bg-emerald-900/20 hover:shadow-md'
                 }`}
               >
                 {item.name}
@@ -48,7 +47,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 transition-colors"
+            className="lg:hidden p-3 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-emerald-100/80 dark:hover:bg-emerald-900/30 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
@@ -62,17 +61,17 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-emerald-200 dark:border-emerald-800">
-            <div className="flex flex-col space-y-3 pt-4">
+          <div className="lg:hidden mt-6 pb-6 border-t border-emerald-200/30 dark:border-emerald-700/20">
+            <div className="flex flex-col space-y-2 pt-6">
               {navigationItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`px-3 py-2 rounded-lg font-medium transition-colors ${
+                  className={`px-4 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 ${
                     pathname === item.href
-                      ? 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30'
-                      : 'text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/30'
+                      ? 'text-white bg-gradient-to-r from-emerald-500 to-teal-600 shadow-lg shadow-emerald-500/25'
+                      : 'text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/80 dark:hover:bg-emerald-900/20 hover:shadow-md'
                   }`}
                 >
                   {item.name}
