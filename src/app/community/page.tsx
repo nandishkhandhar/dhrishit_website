@@ -51,13 +51,13 @@ export default function Community() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Project GreytoGrow</h3>
-                  <p className="text-teal-600 dark:text-teal-400">Urban Greening Initiative</p>
+                  <p className="text-teal-600 dark:text-teal-400">Founder • Mentored by Nirupma Singh, PhD in Bioinformatics, University of Delhi • 2025</p>
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Spearheaded an urban reforestation project transforming grey concrete spaces into green areas. 
-                Collaborated with local authorities to plant over 500 native trees and create community gardens 
-                in urban neighborhoods, improving air quality and biodiversity.
+                Created a 3-step prototype to purify and reuse greywater, inspired by wetland ecosystems. 
+                Trained 100+ children from the Saaksharta Foundation to implement the system through workshops 
+                and by distributing kits and manuals.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
