@@ -59,7 +59,7 @@ export default function Community() {
                 Collaborated with local authorities to plant over 500 native trees and create community gardens 
                 in urban neighborhoods, improving air quality and biodiversity.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-6">
                 <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
                   Urban Ecology
                 </span>
@@ -69,6 +69,34 @@ export default function Community() {
                 <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
                   Community Development
                 </span>
+              </div>
+              
+              <div className="mt-8">
+                <div className="bg-gradient-to-r from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20 rounded-xl p-6 border border-teal-200/50 dark:border-teal-700/30">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-lg flex items-center justify-center">
+                      <span className="text-white text-sm">🎬</span>
+                    </div>
+                    <h4 className="text-xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
+                      Project Showcase Video
+                    </h4>
+                  </div>
+                  <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 bg-black">
+                    <video 
+                      controls 
+                      className="w-full h-auto aspect-video"
+                      preload="metadata"
+                    >
+                      <source src="/greytogrow.mp4" type="video/mp4" />
+                      <div className="p-8 text-center text-white">
+                        <p>Your browser does not support the video tag.</p>
+                        <a href="/greytogrow.mp4" className="text-teal-400 hover:text-teal-300 underline">
+                          Download video instead
+                        </a>
+                      </div>
+                    </video>
+                  </div>
+                </div>
               </div>
             </div>
 

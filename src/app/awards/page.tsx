@@ -50,8 +50,8 @@ export default function Awards() {
                   
                   <div className="space-y-8 px-6 pb-4">
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-red-400 to-rose-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">🧬</span>
+                  <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+                    <Image src="/fisologo.jpg" alt="FISO Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -75,8 +75,8 @@ export default function Awards() {
                 </div>
 
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">🧪</span>
+                  <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+                    <Image src="/assetlogo.jpeg" alt="ASSET Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -100,8 +100,8 @@ export default function Awards() {
                 </div>
 
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">⚗️</span>
+                  <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+                    <Image src="/icqlogo.jpg" alt="ICQ Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -126,8 +126,8 @@ export default function Awards() {
                 </div>
 
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">📊</span>
+                  <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+                    <Image src="/cemclogo.png" alt="CEMC Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -167,8 +167,8 @@ export default function Awards() {
                 </div>
 
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">📊</span>
+                  <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+                    <Image src="/hkimologo.png" alt="HKIMO Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -194,8 +194,8 @@ export default function Awards() {
                 </div>
 
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">⚛️</span>
+                  <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+                    <Image src="/avogadrologo.jpg" alt="Avogadro Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -273,8 +273,8 @@ export default function Awards() {
                 </div>
 
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">🤿</span>
+                  <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+                    <Image src="/padilogo.svg" alt="PADI Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">

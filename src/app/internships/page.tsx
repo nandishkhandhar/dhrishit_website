@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Internships() {
@@ -11,20 +12,22 @@ export default function Internships() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full mb-6">
-              <span className="text-3xl">🔬</span>
+              <span className="text-3xl">💼</span>
             </div>
             <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              Internships & Research Experience
+              Internships
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Hands-on experience in biological research and laboratory environments
+              Diverse experience spanning urban ecology, marine conservation, and microbiome research across India&apos;s leading environmental organizations
             </p>
           </div>
 
           <div className="space-y-8">
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-4">
-                <div className="w-3 h-3 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  <Image src="/bnhslogo.png" alt="BNHS Logo" width={64} height={64} className="w-16 h-16 object-contain" />
+                </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     Research Intern - BNHS Navi Mumbai
@@ -58,7 +61,9 @@ export default function Internships() {
 
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-4">
-                <div className="w-3 h-3 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  <Image src="/coastalimpactlogo.jpeg" alt="Coastal Impact Logo" width={64} height={64} className="w-16 h-16 object-contain" />
+                </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     Marine Research Intern - Coastal Impact NGO Goa, India
@@ -71,6 +76,10 @@ export default function Internships() {
                       <li className="flex items-start gap-3">
                         <span className="text-teal-500 mt-1">•</span>
                         <span>Interned at Coastal Impact NGO (established 2009) - studies and monitors India&apos;s marine ecosystems, supporting awareness, outreach, research, and conservation initiatives</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-teal-500 mt-1">•</span>
+                        <span>Conducted coral restoration data analysis, benthic composition surveys, and coral microfragmentation research using CPCe software and AI platforms</span>
                       </li>
                     </ul>
                   </div>
@@ -126,7 +135,9 @@ export default function Internships() {
 
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-start gap-4">
-                <div className="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  <Image src="/mibiomelogo.jpeg" alt="MiBiome Logo" width={64} height={64} className="w-16 h-16 object-contain" />
+                </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     Research Assistant - MiBiome Lab Mumbai
@@ -135,12 +146,15 @@ export default function Internships() {
                     Summer 2025
                   </p>
                   <div className="prose prose-gray dark:prose-invert max-w-none">
-                    <ul className="space-y-2">
-                      <li>Assisted in coral microbiome research and microbial community analysis</li>
-                      <li>Performed DNA extraction and sequencing preparation for microbial samples</li>
-                      <li>Analyzed microbiome data using bioinformatics tools and software</li>
-                      <li>Maintained sterile laboratory conditions for microbial culture work</li>
-                      <li>Contributed to research on coral-microbe interactions and symbiosis</li>
+                    <ul className="space-y-2 list-none">
+                      <li className="flex items-start gap-3">
+                        <span className="text-cyan-500 mt-1">•</span>
+                        <span>MiBiome develops cutting-edge genomics technologies to democratize genetic research and advance precision medicine</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-cyan-500 mt-1">•</span>
+                        <span>Gained expertise in DNA sequencing methodologies including Sanger sequencing and next-generation Illumina sequencing techniques</span>
+                      </li>
                     </ul>
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">

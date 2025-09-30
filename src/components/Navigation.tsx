@@ -12,7 +12,7 @@ const navigationItems = [
   { name: 'Resume', href: '/resume' },
   { name: 'Publications', href: '/publications' },
   { name: 'Research', href: '/research' },
-  { name: 'JNIS', href: '/jnis' },
+  { name: 'Life at JNIS', href: '/jnis' },
 ];
 
 export default function Navigation() {
