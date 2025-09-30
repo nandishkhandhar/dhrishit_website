@@ -162,10 +162,6 @@ export default function JNIS() {
                       </div>
                       
                       <div className="space-y-6">
-                        <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mx-auto max-w-md">
-                          <Image src="/artex/poster.jpeg" alt="Art Exhibition Poster" fill className="object-cover" />
-                        </div>
-                        
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                             <Image src="/artex/a1.jpg" alt="Art Exhibition Piece 1" fill className="object-cover" />
@@ -179,6 +175,10 @@ export default function JNIS() {
                           <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                             <Image src="/artex/a4.jpg" alt="Art Exhibition Piece 4" fill className="object-cover" />
                           </div>
+                        </div>
+                        
+                        <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mx-auto max-w-md">
+                          <Image src="/artex/poster.jpeg" alt="Art Exhibition Poster" fill className="object-cover" />
                         </div>
                       </div>
                     </div>
