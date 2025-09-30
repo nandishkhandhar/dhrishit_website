@@ -61,6 +61,9 @@ export default function Community() {
                 kits and manuals. Won the Earth Prize award for this project.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">
+                  🏆 Earth Prize Winner
+                </span>
                 <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
                   Urban Ecology
                 </span>
@@ -69,9 +72,6 @@ export default function Community() {
                 </span>
                 <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
                   Community Development
-                </span>
-                <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">
-                  🏆 Earth Prize Winner
                 </span>
               </div>
               
