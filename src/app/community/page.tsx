@@ -82,19 +82,13 @@ export default function Community() {
                     </h4>
                   </div>
                   <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 bg-black">
-                    <video 
-                      controls 
-                      className="w-full h-auto aspect-video"
-                      preload="metadata"
-                    >
-                      <source src="https://drive.google.com/uc?export=download&id=10GfrswQ6uetxiVLicERIn67OJ7P_liOW" type="video/mp4" />
-                      <div className="p-8 text-center text-white">
-                        <p>Your browser does not support the video tag.</p>
-                        <a href="https://drive.google.com/uc?export=download&id=10GfrswQ6uetxiVLicERIn67OJ7P_liOW" className="text-teal-400 hover:text-teal-300 underline">
-                          Download video instead
-                        </a>
-                      </div>
-                    </video>
+                    <iframe 
+                      src="https://drive.google.com/file/d/10GfrswQ6uetxiVLicERIn67OJ7P_liOW/preview"
+                      className="w-full aspect-video"
+                      allow="autoplay"
+                      allowFullScreen
+                      title="GreyToGrow Project Video"
+                    ></iframe>
                   </div>
                 </div>
               </div>
