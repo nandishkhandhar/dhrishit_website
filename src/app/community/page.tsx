@@ -83,9 +83,9 @@ export default function Community() {
                   </div>
                   <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 bg-black">
                     <iframe 
-                      src="https://drive.google.com/file/d/10GfrswQ6uetxiVLicERIn67OJ7P_liOW/preview?autoplay=1"
+                      src="https://drive.google.com/file/d/10GfrswQ6uetxiVLicERIn67OJ7P_liOW/preview"
                       className="w-full aspect-video"
-                      allow="autoplay; fullscreen"
+                      allow="fullscreen"
                       allowFullScreen
                       title="GreyToGrow Project Video"
                     ></iframe>
