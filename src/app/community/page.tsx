@@ -87,10 +87,10 @@ export default function Community() {
                       className="w-full h-auto aspect-video"
                       preload="metadata"
                     >
-                      <source src="/greytogrow.mp4" type="video/mp4" />
+                      <source src="https://drive.google.com/uc?export=download&id=10GfrswQ6uetxiVLicERIn67OJ7P_liOW" type="video/mp4" />
                       <div className="p-8 text-center text-white">
                         <p>Your browser does not support the video tag.</p>
-                        <a href="/greytogrow.mp4" className="text-teal-400 hover:text-teal-300 underline">
+                        <a href="https://drive.google.com/uc?export=download&id=10GfrswQ6uetxiVLicERIn67OJ7P_liOW" className="text-teal-400 hover:text-teal-300 underline">
                           Download video instead
                         </a>
                       </div>
