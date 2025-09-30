@@ -260,7 +260,7 @@ export default function Awards() {
                       Earth Prize Foundation • 2025
                     </p>
                     <p className="text-gray-600 dark:text-gray-300 mb-4">
-                      The Earth Prize is the world's largest environmental competition for young people addressing environmental sustainability issues. Won the award for his project GreyToGrow, to purify greywater for low income communities in my locality.
+                      The Earth Prize is the world&apos;s largest environmental competition for young people addressing environmental sustainability issues. Won the award for his project GreyToGrow, to purify greywater for low income communities in my locality.
                     </p>
                     
                     <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-8">

@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Internships() {
@@ -71,7 +70,7 @@ export default function Internships() {
                     <ul className="space-y-2 list-none">
                       <li className="flex items-start gap-3">
                         <span className="text-teal-500 mt-1">•</span>
-                        <span>Interned at Coastal Impact NGO (established 2009) - studies and monitors India's marine ecosystems, supporting awareness, outreach, research, and conservation initiatives</span>
+                        <span>Interned at Coastal Impact NGO (established 2009) - studies and monitors India&apos;s marine ecosystems, supporting awareness, outreach, research, and conservation initiatives</span>
                       </li>
                     </ul>
                   </div>
