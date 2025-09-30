@@ -55,9 +55,10 @@ export default function Community() {
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Created a 3-step prototype to purify and reuse greywater, inspired by wetland ecosystems. 
-                Trained 100+ children from the Saaksharta Foundation to implement the system through workshops 
-                and by distributing kits and manuals.
+                Created a 3-step prototype to purify and reuse greywater, inspired by wetland ecosystems, 
+                designed to purify greywater for low income communities in my locality. Trained 100+ children 
+                from the Saaksharta Foundation to implement the system through workshops and by distributing 
+                kits and manuals. Won the Earth Prize award for this project.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
@@ -68,6 +69,9 @@ export default function Community() {
                 </span>
                 <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
                   Community Development
+                </span>
+                <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">
+                  🏆 Earth Prize Winner
                 </span>
               </div>
               
