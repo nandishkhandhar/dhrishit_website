@@ -1,4 +1,10 @@
+'use client';
+
+import { useState } from 'react';
+import Image from 'next/image';
+
 export default function Community() {
+  const [saakshatraOpen, setSaakshatraOpen] = useState(false);
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-gray-900 dark:via-emerald-900/20 dark:to-teal-900/20">
       <div className="container mx-auto px-6 py-20">
@@ -100,52 +106,71 @@ export default function Community() {
 
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-cyan-100 dark:bg-cyan-900/50 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">🤝</span>
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  <Image src="/saakshartalogo.jpg" alt="Saaksharta Foundation Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">NGO Volunteer</h3>
-                  <p className="text-cyan-600 dark:text-cyan-400">Wildlife Conservation NGO</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Volunteer</h3>
+                  <p className="text-cyan-600 dark:text-cyan-400">Saaksharta Foundation</p>
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Volunteered with local wildlife conservation NGO to support endangered species protection programs. 
-                Assisted in wildlife rehabilitation efforts, conducted educational workshops for school children, 
-                and participated in habitat restoration projects across protected areas.
+                Volunteer at Saaksharta Foundation, a Mumbai-based non-profit NGO inclined towards bettering lives 
+                of the underprivileged community. Teaching science to 40+ Grade 7 students through creative experiments 
+                and hands-on learning. Introduced marine conservation through intertidal walks and shared the 
+                award-winning GreytoGrow project with students and their families.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-6">
                 <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Wildlife Conservation
-                </span>
-                <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
                   Education
                 </span>
-                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                  Habitat Restoration
+                <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
+                  Community Development
                 </span>
+                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
+                  Literacy Programs
+                </span>
+              </div>
+              
+              <div className="mt-6">
+                <button
+                  onClick={() => setSaakshatraOpen(!saakshatraOpen)}
+                  className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white rounded-xl transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] border-2 border-cyan-400/30"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>View Volunteer Reflection</span>
+                  <div className={`transform transition-all duration-300 ${saakshatraOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </button>
+                
+                {saakshatraOpen && (
+                  <div className="mt-4">
+                    <div className="rounded-lg overflow-hidden shadow-xl border-2 border-cyan-200/30 dark:border-cyan-700/30">
+                      <div className="w-full h-screen max-h-[800px]">
+                        <iframe
+                          src="/saaksharta.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                          className="w-full h-full border-0"
+                          title="Saaksharta Foundation Volunteer Reflection"
+                          style={{
+                            display: 'block',
+                            background: 'white',
+                            border: 'none',
+                            outline: 'none'
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 rounded-xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Community Impact
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div>
-                <div className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">150+</div>
-                <p className="text-gray-600 dark:text-gray-300">Students Tutored</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-2">25</div>
-                <p className="text-gray-600 dark:text-gray-300">Sustainability Projects</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-2">500+</div>
-                <p className="text-gray-600 dark:text-gray-300">Community Members Reached</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

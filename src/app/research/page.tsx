@@ -28,7 +28,7 @@ export default function Research() {
                 <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg flex items-center justify-center">
                   <span className="text-2xl">📄</span>
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Published Research</h2>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Research Papers</h2>
               </div>
               
               <div className="space-y-8">
