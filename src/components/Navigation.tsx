@@ -20,11 +20,14 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-2xl z-50 border-b border-emerald-200/30 dark:border-emerald-700/20 shadow-2xl">
-      <div className="max-w-7xl mx-auto px-6 py-5">
+    <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-emerald-200/20 dark:border-emerald-700/15 shadow-xl py-5">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105">
-            Dhrishit Khandhar
+          <Link href="/" className="font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500 transition-all duration-500 transform hover:scale-105 text-2xl">
+            <span className="inline-flex items-center gap-2">
+              Dhrishit Khandhar
+              <span className="text-xl animate-pulse">🧬</span>
+            </span>
           </Link>
           
           {/* Desktop Navigation */}
