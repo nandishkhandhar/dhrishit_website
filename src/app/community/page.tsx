@@ -110,7 +110,7 @@ export default function Community() {
                   <Image src="/saakshartalogo.jpg" alt="Saaksharta Foundation Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Volunteer</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Teaching Volunteer</h3>
                   <p className="text-cyan-600 dark:text-cyan-400">Saaksharta Foundation</p>
                 </div>
               </div>
@@ -167,6 +167,58 @@ export default function Community() {
                     </div>
                   </div>
                 )}
+              </div>
+              
+              <div className="mt-6">
+                <div className="bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 rounded-xl p-6 border border-cyan-200/50 dark:border-cyan-700/30">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                      <span className="text-white text-sm">📸</span>
+                    </div>
+                    <h4 className="text-xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
+                      Teaching Gallery
+                    </h4>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-gray-100 dark:bg-gray-700">
+                      <video 
+                        controls 
+                        muted
+                        loop
+                        className="w-full h-full object-cover"
+                        preload="metadata"
+                      >
+                        <source src="/s5.mp4" type="video/mp4" />
+                        <div className="flex items-center justify-center h-full">
+                          <div className="text-center p-4">
+                            <p className="text-gray-600 dark:text-gray-300 mb-2">Video preview not available</p>
+                            <a href="/s5.mp4" className="text-cyan-600 hover:text-cyan-500 underline">
+                              Download video
+                            </a>
+                          </div>
+                        </div>
+                      </video>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <Image src="/s1.jpeg" alt="Teaching Science at Saaksharta Foundation 1" fill className="object-contain" />
+                      </div>
+                      <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <Image src="/s2.jpeg" alt="Teaching Science at Saaksharta Foundation 2" fill className="object-contain" />
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <Image src="/s3.jpeg" alt="Teaching Science at Saaksharta Foundation 3" fill className="object-contain" />
+                      </div>
+                      <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <Image src="/s4.jpeg" alt="Teaching Science at Saaksharta Foundation 4" fill className="object-contain" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
