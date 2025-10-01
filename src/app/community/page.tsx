@@ -42,8 +42,8 @@ export default function Community() {
 
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900/50 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">🌱</span>
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  <Image src="/greylogo.png" alt="GreytoGrow Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">Project GreytoGrow</h3>
