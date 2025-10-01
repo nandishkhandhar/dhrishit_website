@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 export default function Community() {
+  const [greytoGrowOpen, setGreytoGrowOpen] = useState(false);
   const [saakshatraOpen, setSaakshatraOpen] = useState(false);
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-gray-900 dark:via-emerald-900/20 dark:to-teal-900/20">
@@ -37,17 +38,6 @@ export default function Community() {
                 Organized beach clean-up drives and educated local communities about marine conservation, 
                 reaching over 200 participants across coastal areas.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Marine Conservation
-                </span>
-                <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                  Community Outreach
-                </span>
-                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                  Environmental Education
-                </span>
-              </div>
             </div>
 
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
@@ -56,8 +46,8 @@ export default function Community() {
                   <span className="text-2xl">🌱</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Project GreytoGrow</h3>
-                  <p className="text-teal-600 dark:text-teal-400">Founder • Mentored by Nirupma Singh, PhD in Bioinformatics, University of Delhi • 2025</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">Project GreytoGrow</h3>
+                  <p className="text-teal-600 dark:text-teal-400">Founder • 🏆 Earth Prize Asian Scholar Award Winner • 2025</p>
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -66,19 +56,42 @@ export default function Community() {
                 from the Saaksharta Foundation to implement the system through workshops and by distributing 
                 kits and manuals. Won the Earth Prize award for this project.
               </p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">
-                  🏆 Earth Prize Winner
-                </span>
-                <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Urban Ecology
-                </span>
-                <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                  Sustainability
-                </span>
-                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                  Community Development
-                </span>
+              
+              <div className="mt-6">
+                <button
+                  onClick={() => setGreytoGrowOpen(!greytoGrowOpen)}
+                  className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white rounded-xl transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] border-2 border-teal-400/30"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>View Project Report</span>
+                  <div className={`transform transition-all duration-300 ${greytoGrowOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </button>
+                
+                {greytoGrowOpen && (
+                  <div className="mt-4">
+                    <div className="rounded-lg overflow-hidden shadow-xl border-2 border-teal-200/30 dark:border-teal-700/30">
+                      <div className="w-full h-screen max-h-[800px]">
+                        <iframe
+                          src="/greytogrowreport.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                          className="w-full h-full border-0"
+                          title="GreytoGrow Project Report"
+                          style={{
+                            display: 'block',
+                            background: 'white',
+                            border: 'none',
+                            outline: 'none'
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
               
               <div className="mt-8">
@@ -120,17 +133,6 @@ export default function Community() {
                 and hands-on learning. Introduced marine conservation through intertidal walks and shared the 
                 award-winning GreytoGrow project with students and their families.
               </p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Education
-                </span>
-                <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-200 rounded-full text-sm">
-                  Community Development
-                </span>
-                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">
-                  Literacy Programs
-                </span>
-              </div>
               
               <div className="mt-6">
                 <button
