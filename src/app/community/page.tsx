@@ -96,22 +96,54 @@ export default function Community() {
               
               <div className="mt-8">
                 <div className="bg-gradient-to-r from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20 rounded-xl p-6 border border-teal-200/50 dark:border-teal-700/30">
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-3 mb-6">
                     <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-lg flex items-center justify-center">
                       <span className="text-white text-sm">🎬</span>
                     </div>
                     <h4 className="text-xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-                      Project Showcase Video
+                      Project Showcase & Gallery
                     </h4>
                   </div>
-                  <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 bg-black">
-                    <iframe 
-                      src="https://drive.google.com/file/d/10GfrswQ6uetxiVLicERIn67OJ7P_liOW/preview"
-                      className="w-full aspect-video"
-                      allow="fullscreen"
-                      allowFullScreen
-                      title="GreyToGrow Project Video"
-                    ></iframe>
+                  
+                  <div className="space-y-8">
+                    <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 bg-black">
+                      <iframe 
+                        src="https://drive.google.com/file/d/10GfrswQ6uetxiVLicERIn67OJ7P_liOW/preview"
+                        className="w-full aspect-video"
+                        allow="fullscreen"
+                        allowFullScreen
+                        title="GreyToGrow Project Video"
+                      ></iframe>
+                    </div>
+                    
+                    <div className="relative rounded-xl overflow-hidden shadow-2xl bg-black">
+                      <iframe 
+                        src="https://www.youtube.com/embed/zCO0msrFwkU"
+                        className="w-full aspect-video border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="GreyToGrow YouTube Video"
+                      ></iframe>
+                    </div>
+                    
+                    <div className="space-y-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                          <Image src="/e1.jpeg" alt="GreytoGrow Project Image 1" fill className="object-contain" />
+                        </div>
+                        <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                          <Image src="/e2.jpeg" alt="GreytoGrow Project Image 2" fill className="object-contain" />
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                          <Image src="/e3.jpeg" alt="GreytoGrow Project Image 3" fill className="object-contain" />
+                        </div>
+                        <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                          <Image src="/e4.jpeg" alt="GreytoGrow Project Image 4" fill className="object-contain" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
