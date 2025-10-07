@@ -34,7 +34,7 @@ export default function Community() {
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Time and Tide is an organisation created in hopes to spark passion about the unique biodiversity of Mumbai in young marine enthusiasts. Bringing light to the ecosystems that thrive in such environments is vital for their conservation and maintenance for future generations. My goal is to help bridge the gap between Mumbai's hidden life and public awareness. Through Time and Tide, I also aim to uncover our life-teeming shores, share and gain knowledge, and connect with others who are passionate about protecting our oceans.
+                Time and Tide is an organisation created in hopes to spark passion about the unique biodiversity of Mumbai in young marine enthusiasts. Bringing light to the ecosystems that thrive in such environments is vital for their conservation and maintenance for future generations. My goal is to help bridge the gap between Mumbai&apos;s hidden life and public awareness. Through Time and Tide, I also aim to uncover our life-teeming shores, share and gain knowledge, and connect with others who are passionate about protecting our oceans.
               </p>
 
               <div className="mt-8">
