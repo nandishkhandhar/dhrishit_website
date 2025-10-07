@@ -84,9 +84,9 @@ export default function Research() {
                                     <p className="text-sm text-emerald-600 dark:text-emerald-400">Publication • 2025</p>
                                   </div>
                                 </div>
-                                <a 
-                                  href="/microfrag.pdf" 
-                                  download 
+                                <a
+                                  href="/lungresearch.pdf"
+                                  download
                                   className="flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-6 py-3 rounded-xl transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
                                 >
                                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ export default function Research() {
                             <div className="rounded-lg overflow-hidden shadow-xl border-2 border-emerald-200/30 dark:border-emerald-700/30">
                               <div className="w-full h-screen max-h-[800px]">
                                 <iframe
-                                  src="/microfrag.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                                  src="/lungresearch.pdf#toolbar=0&navpanes=0&scrollbar=0"
                                   className="w-full h-full border-0"
                                   title="Surfactant Proteins Research Paper"
                                   style={{

@@ -1,4 +1,9 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function Publications() {
+  const [bookOpen, setBookOpen] = useState(false);
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-gray-900 dark:via-emerald-900/20 dark:to-teal-900/20">
       <div className="container mx-auto px-6 py-20">
@@ -48,16 +53,50 @@ export default function Publications() {
                     &quot;100 FEET UNDER–Embracing the Serenity&quot;
                   </h3>
                   <p className="text-teal-600 dark:text-teal-400 font-medium mb-3">
-                    <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded">Partridge Publishing</span> • <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded">Published</span> • <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded">2025</span>
+                    <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded">Coffee Table Book</span> • <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded">Partridge Publishing</span> • <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded">Published</span> • <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded">2025</span>
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     <strong>Publisher:</strong> Partridge Publishing • <strong>Role:</strong> Photographer
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Published underwater photography book featuring marine life photography captured during trips to Bali, 
-                    Indonesia, and the Andaman Islands, India (2023-2025). Developed professional underwater photography 
-                    skills while documenting marine biodiversity and underwater ecosystems.
+                    A stunning coffee table book featuring underwater photography captured during trips to Bali,
+                    Indonesia, and the Andaman Islands, India (2023-2025). This photographic journey documents
+                    marine biodiversity and underwater ecosystems, showcasing the serene beauty found beneath
+                    the waves.
                   </p>
+
+                  <div className="mt-6">
+                    <button
+                      onClick={() => setBookOpen(!bookOpen)}
+                      className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white rounded-xl transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] border-2 border-teal-400/30"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                      <span>View Coffee Table Book</span>
+                      <div className={`transform transition-all duration-300 ${bookOpen ? 'rotate-180' : ''}`}>
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
+                    </button>
+
+                    {bookOpen && (
+                      <div className="mt-4">
+                        <div className="w-full h-screen max-h-[800px]">
+                          <iframe
+                            src="/100feetunder.pdf"
+                            className="w-full h-full border-0"
+                            title="100 Feet Under Coffee Table Book"
+                            style={{
+                              border: 'none',
+                              outline: 'none'
+                            }}
+                          />
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
 
 

@@ -25,8 +25,8 @@ export default function Community() {
           <div className="grid md:grid-cols-1 gap-8 mb-12">
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">🌊</span>
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  <Image src="/timeandtidelogo.jpeg" alt="Time and Tide Logo" width={64} height={64} className="w-16 h-16 object-contain" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Time and Tide</h3>
@@ -34,10 +34,43 @@ export default function Community() {
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Led community awareness campaigns about tidal patterns and their impact on coastal ecosystems. 
-                Organized beach clean-up drives and educated local communities about marine conservation, 
-                reaching over 200 participants across coastal areas.
+                Time and Tide is an organisation created in hopes to spark passion about the unique biodiversity of Mumbai in young marine enthusiasts. Bringing light to the ecosystems that thrive in such environments is vital for their conservation and maintenance for future generations. My goal is to help bridge the gap between Mumbai's hidden life and public awareness. Through Time and Tide, I also aim to uncover our life-teeming shores, share and gain knowledge, and connect with others who are passionate about protecting our oceans.
               </p>
+
+              <div className="mt-8">
+                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-xl p-6 border border-emerald-200/50 dark:border-emerald-700/30">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center">
+                      <span className="text-white text-sm">🌊</span>
+                    </div>
+                    <h4 className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                      Marine Life Gallery
+                    </h4>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                        <Image src="/r2.jpeg" alt="Time and Tide Marine Life 2" fill className="object-cover" />
+                      </div>
+                      <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                        <Image src="/r3.jpeg" alt="Time and Tide Marine Life 3" fill className="object-cover" />
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                        <Image src="/r4.jpeg" alt="Time and Tide Marine Life 4" fill className="object-cover" />
+                      </div>
+                      <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                        <Image src="/r5.jpeg" alt="Time and Tide Marine Life 5" fill className="object-cover" />
+                      </div>
+                      <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                        <Image src="/r6.jpeg" alt="Time and Tide Marine Life 6" fill className="object-cover" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-emerald-200 dark:border-emerald-800">
