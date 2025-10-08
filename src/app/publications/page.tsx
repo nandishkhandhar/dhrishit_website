@@ -121,21 +121,30 @@ export default function Publications() {
                   <div className="w-full h-px bg-gradient-to-r from-teal-200 via-cyan-400 to-teal-200 dark:from-teal-800 dark:via-cyan-600 dark:to-teal-800 mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Publisher:</strong> Partridge Publishing
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Type:</strong> Coffee Table Book - Underwater Photography Collection
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Role:</strong> Photographer
-                    </p>
-                    <p className="text-gray-700 dark:text-gray-300 mb-6">
-                      A stunning coffee table book featuring underwater photography captured during trips to Bali,
-                      Indonesia, and the Andaman Islands, India (2023-2025). This photographic journey documents
-                      marine biodiversity and underwater ecosystems, showcasing the serene beauty found beneath
-                      the waves.
-                    </p>
+                    <div className="grid md:grid-cols-3 gap-4 mb-6">
+                      <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-lg p-4 border border-teal-200 dark:border-teal-700">
+                        <p className="text-xs text-teal-600 dark:text-teal-400 font-semibold uppercase tracking-wide mb-1">Publisher</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">Partridge Publishing</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 rounded-lg p-4 border border-cyan-200 dark:border-cyan-700">
+                        <p className="text-xs text-cyan-600 dark:text-cyan-400 font-semibold uppercase tracking-wide mb-1">Type</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">Coffee Table Book</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-700">
+                        <p className="text-xs text-blue-600 dark:text-blue-400 font-semibold uppercase tracking-wide mb-1">Role</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">Photographer</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-teal-50/50 via-cyan-50/50 to-blue-50/50 dark:from-teal-900/10 dark:via-cyan-900/10 dark:to-blue-900/10 rounded-xl p-6 border-l-4 border-teal-500">
+                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
+                        A stunning coffee table book featuring underwater photography captured during trips to
+                        <span className="font-semibold text-teal-700 dark:text-teal-400"> Bali, Indonesia</span> and the
+                        <span className="font-semibold text-teal-700 dark:text-teal-400"> Andaman Islands, India</span> (2023-2025). This photographic journey documents
+                        marine biodiversity and underwater ecosystems, showcasing the serene beauty found beneath
+                        the waves.
+                      </p>
+                    </div>
 
                     <div className="w-full h-screen max-h-[800px] rounded-lg overflow-hidden shadow-xl">
                       <iframe
@@ -188,20 +197,30 @@ export default function Publications() {
                   <div className="w-full h-px bg-gradient-to-r from-cyan-200 via-blue-400 to-cyan-200 dark:from-cyan-800 dark:via-blue-600 dark:to-cyan-800 mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Publisher:</strong> BriBooks
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Type:</strong> Short Novel
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Role:</strong> Author
-                    </p>
-                    <p className="text-gray-700 dark:text-gray-300 mb-6">
-                      Selected by school teachers based on interest in English literature to author a short book.
-                      Wrote about a mechanised utopian future where select students from sectors were escorted to
-                      experience the natural world, exploring themes of technology, nature, and human connection.
-                    </p>
+                    <div className="grid md:grid-cols-3 gap-4 mb-6">
+                      <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 rounded-lg p-4 border border-cyan-200 dark:border-cyan-700">
+                        <p className="text-xs text-cyan-600 dark:text-cyan-400 font-semibold uppercase tracking-wide mb-1">Publisher</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">BriBooks</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-700">
+                        <p className="text-xs text-blue-600 dark:text-blue-400 font-semibold uppercase tracking-wide mb-1">Type</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">Short Novel</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-lg p-4 border border-indigo-200 dark:border-indigo-700">
+                        <p className="text-xs text-indigo-600 dark:text-indigo-400 font-semibold uppercase tracking-wide mb-1">Role</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">Author</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-cyan-50/50 via-blue-50/50 to-indigo-50/50 dark:from-cyan-900/10 dark:via-blue-900/10 dark:to-indigo-900/10 rounded-xl p-6 border-l-4 border-cyan-500">
+                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
+                        Selected by school teachers based on interest in English literature to author a short book.
+                        Wrote about a
+                        <span className="font-semibold text-cyan-700 dark:text-cyan-400"> mechanised utopian future</span> where select students from sectors were escorted to
+                        experience the natural world, exploring themes of
+                        <span className="font-semibold text-cyan-700 dark:text-cyan-400"> technology, nature, and human connection</span>.
+                      </p>
+                    </div>
                   </div>
                 </>
               )}
