@@ -144,6 +144,7 @@ export default function Research() {
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
                     <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-1 rounded text-sm">Published</span>
+                    <span className="bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200 px-2 py-1 rounded text-sm">🏆 British Gold Crest Award</span>
                     <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">IJHSR</span>
                     <span className="bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-200 px-2 py-1 rounded text-sm">December 2025</span>
                   </div>
@@ -163,16 +164,19 @@ export default function Research() {
 
                   <div className="space-y-6 px-6 pb-6">
                     <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Mentor:</strong> Dr. Prerna Gupta (PhD in Immunology and Virology, Mumbai University)
+                      <strong>Mentor:</strong> Pialy Ghanekar
                     </p>
                     <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Journal:</strong> International Journal for High School Research
+                      <strong>Journal:</strong> International Journal for High School Research (IJHSR)
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-300 mb-3">
+                      <strong>Award:</strong> 🏆 British Gold Crest Award
                     </p>
                     <p className="text-gray-700 dark:text-gray-300 mb-6">
                       Analyzed how 4 coral species secrete hormones and enzymes during microfragmentation and how
                       extreme environmental stress affects their effectiveness. This independent research provides
                       critical insights into coral restoration techniques and their resilience under climate change
-                      pressures.
+                      pressures. Won the prestigious British Gold Crest Award for this research.
                     </p>
 
                     <div className="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg mb-6">
