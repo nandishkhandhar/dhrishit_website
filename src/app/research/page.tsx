@@ -164,7 +164,7 @@ export default function Research() {
 
                   <div className="space-y-6 px-6 pb-6">
                     <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Mentor:</strong> Pialy Ghanekar
+                      <strong>Mentor:</strong> Pialy Ghanekar (PhD in Immunology and Virology, Mumbai University)
                     </p>
                     <p className="text-gray-600 dark:text-gray-300 mb-3">
                       <strong>Journal:</strong> International Journal for High School Research (IJHSR)
