@@ -58,20 +58,28 @@ export default function Publications() {
                   <div className="w-full h-px bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-200 dark:from-emerald-800 dark:via-emerald-600 dark:to-emerald-800 mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Publisher:</strong> Bombay Natural History Society (BNHS)
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Magazine:</strong> Hornbill Magazine
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-300 mb-3">
-                      <strong>Role:</strong> Freelance Author
-                    </p>
-                    <p className="text-gray-700 dark:text-gray-300 mb-6">
-                      Published an article describing diving experiences and marine biodiversity observations in the
-                      Andaman and Nicobar Islands, providing detailed insights into underwater ecosystems and marine
-                      life diversity in this biodiverse archipelago.
-                    </p>
+                    <div className="grid md:grid-cols-3 gap-4 mb-6">
+                      <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-lg p-4 border border-emerald-200 dark:border-emerald-700">
+                        <p className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold uppercase tracking-wide mb-1">Publisher</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">Bombay Natural History Society (BNHS)</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-lg p-4 border border-teal-200 dark:border-teal-700">
+                        <p className="text-xs text-teal-600 dark:text-teal-400 font-semibold uppercase tracking-wide mb-1">Magazine</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">Hornbill Magazine</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 rounded-lg p-4 border border-cyan-200 dark:border-cyan-700">
+                        <p className="text-xs text-cyan-600 dark:text-cyan-400 font-semibold uppercase tracking-wide mb-1">Role</p>
+                        <p className="text-sm font-bold text-gray-900 dark:text-white">Freelance Author</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-emerald-50/50 via-teal-50/50 to-cyan-50/50 dark:from-emerald-900/10 dark:via-teal-900/10 dark:to-cyan-900/10 rounded-xl p-6 border-l-4 border-emerald-500">
+                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
+                        Published an article describing diving experiences and marine biodiversity observations in the
+                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> Andaman and Nicobar Islands</span>, providing detailed insights into underwater ecosystems and marine
+                        life diversity in this biodiverse archipelago.
+                      </p>
+                    </div>
                   </div>
                 </>
               )}
