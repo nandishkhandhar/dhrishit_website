@@ -44,7 +44,7 @@ export default function Internships() {
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
                     <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-sm">Bombay Natural History Society</span>
-                    <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">Summer 2024</span>
+                    <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">Summer 2023/2024</span>
                   </div>
                 </div>
                 <div className={`transform transition-all duration-300 ${bnhsOpen ? 'rotate-180' : ''} group-hover:scale-110`}>

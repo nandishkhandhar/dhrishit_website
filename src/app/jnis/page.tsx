@@ -39,7 +39,7 @@ export default function JNIS() {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200 px-2 py-1 rounded text-sm">Leadership Role</span>
-                    <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded text-sm">2023 - Present</span>
+                    <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded text-sm">2023/24</span>
                   </div>
                 </div>
                 <div className={`transform transition-all duration-300 ${tagoreCaptainOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
@@ -233,8 +233,8 @@ export default function JNIS() {
                         <span className="font-semibold text-indigo-700 dark:text-indigo-400"> scientific art and nature photography</span>.
                         Successfully sold
                         <span className="font-semibold text-indigo-700 dark:text-indigo-400"> 15+ pieces</span> featuring marine life illustrations and underwater photography,
-                        with proceeds supporting
-                        <span className="font-semibold text-indigo-700 dark:text-indigo-400"> JNIS educational initiatives and conservation projects</span>.
+                        with proceeds used for creating
+                        <span className="font-semibold text-indigo-700 dark:text-indigo-400"> Project GreytoGrow</span>.
                       </p>
                     </div>
 

@@ -10,7 +10,7 @@ export default function Community() {
   const [saakshatraOpen, setSaakshatraOpen] = useState(false);
   const [saakshatraPdfOpen, setSaakshatraPdfOpen] = useState(false);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-gray-900 dark:via-emerald-900/20 dark:to-teal-900/20">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -44,6 +44,7 @@ export default function Community() {
                   <div className="ml-15 flex flex-wrap gap-2">
                     <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-sm">Marine Conservation Initiative</span>
                     <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">Founder</span>
+                    <span className="bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-200 px-2 py-1 rounded text-sm">2024 onwards</span>
                   </div>
                 </div>
                 <div className={`transform transition-all duration-300 ${timeAndTideOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
@@ -263,6 +264,7 @@ export default function Community() {
                   <div className="ml-15 flex flex-wrap gap-2">
                     <span className="bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-200 px-2 py-1 rounded text-sm">Saaksharta Foundation</span>
                     <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-2 py-1 rounded text-sm">Volunteer Educator</span>
+                    <span className="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded text-sm">2024 onwards</span>
                   </div>
                 </div>
                 <div className={`transform transition-all duration-300 ${saakshatraOpen ? 'rotate-180' : ''} group-hover:scale-110`}>

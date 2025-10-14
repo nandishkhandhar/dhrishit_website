@@ -38,8 +38,8 @@ export default function Research() {
                     </h2>
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded text-sm">Under Review</span>
-                    <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-sm">S.T. Yau Competition</span>
+                    <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded text-sm">Submitted for Publication in National High School Journal of Science</span>
+                    <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-sm">S.T. Yau Competition - Round 1</span>
                     <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">2025</span>
                   </div>
                 </div>
@@ -143,10 +143,9 @@ export default function Research() {
                     </h2>
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-1 rounded text-sm">Published</span>
                     <span className="bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200 px-2 py-1 rounded text-sm font-bold">🏆 British Gold Crest Award</span>
-                    <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">International Journal for High School Research</span>
-                    <span className="bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-200 px-2 py-1 rounded text-sm">December 2025</span>
+                    <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-1 rounded text-sm">Published in International Journal for High School Research</span>
+                    <span className="bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-200 px-2 py-1 rounded text-sm">2025</span>
                   </div>
                 </div>
                 <div className={`transform transition-all duration-300 ${microfragOpen ? 'rotate-180' : ''} group-hover:scale-110`}>

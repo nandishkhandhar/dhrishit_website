@@ -1,4 +1,5 @@
 import { memo } from 'react';
+import ScrollButton from './components/ScrollButton';
 
 // Memoized icon components for better performance
 const LinkedInIcon = memo(function LinkedInIcon() {
@@ -14,60 +15,73 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-emerald-50/50 to-teal-50 dark:from-slate-900 dark:via-emerald-950/30 dark:to-gray-900 relative overflow-hidden">
       {/* Ultra-modern layered background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Dynamic gradient mesh */}
+        {/* Base gradient layers */}
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-100/40 via-transparent to-cyan-100/40 dark:from-emerald-900/20 dark:via-transparent dark:to-cyan-900/20"></div>
         <div className="absolute inset-0 bg-gradient-to-tl from-transparent via-teal-100/30 to-transparent dark:via-teal-900/15 animate-pulse" style={{animationDuration: '4s', willChange: 'opacity'}}></div>
-        
-        {/* Floating animated orbs with complex movements */}
-        <div className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-emerald-300/25 via-teal-300/20 to-cyan-300/25 dark:from-emerald-700/20 dark:via-teal-700/15 dark:to-cyan-700/20 rounded-full blur-3xl animate-bounce" style={{animationDuration: '6s', willChange: 'transform'}}></div>
-        <div className="absolute top-1/4 -left-20 w-80 h-80 bg-gradient-to-br from-cyan-300/20 via-emerald-300/25 to-teal-300/20 dark:from-cyan-700/15 dark:via-emerald-700/20 dark:to-teal-700/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s', animationDuration: '5s', willChange: 'opacity'}}></div>
-        <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-gradient-to-br from-teal-300/25 via-cyan-300/20 to-emerald-300/25 dark:from-teal-700/20 dark:via-cyan-700/15 dark:to-emerald-700/20 rounded-full blur-3xl animate-ping" style={{animationDelay: '2s', animationDuration: '7s', willChange: 'transform, opacity'}}></div>
-        
-        {/* Rotating geometric elements */}
-        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-br from-emerald-200/15 to-teal-200/15 dark:from-emerald-800/8 dark:to-teal-800/8 rounded-3xl blur-xl animate-spin" style={{animationDuration: '20s', willChange: 'transform'}}></div>
-        <div className="absolute top-3/4 right-1/3 w-24 h-24 bg-gradient-to-br from-cyan-200/20 to-emerald-200/20 dark:from-cyan-800/10 dark:to-emerald-800/10 rounded-2xl blur-lg animate-spin" style={{animationDirection: 'reverse', animationDuration: '15s', willChange: 'transform'}}></div>
-        <div className="absolute top-1/6 right-1/4 w-16 h-16 bg-gradient-to-br from-teal-200/25 to-cyan-200/25 dark:from-teal-800/12 dark:to-cyan-800/12 rounded-xl blur-md animate-pulse" style={{animationDuration: '3s', willChange: 'opacity'}}></div>
-        
-        {/* Floating particles */}
-        <div className="absolute top-1/3 left-1/2 w-4 h-4 bg-emerald-300/30 dark:bg-emerald-600/20 rounded-full blur-sm animate-bounce" style={{animationDelay: '0.5s', animationDuration: '3s', willChange: 'transform'}}></div>
-        <div className="absolute top-2/3 left-1/3 w-3 h-3 bg-teal-300/40 dark:bg-teal-600/25 rounded-full blur-sm animate-ping" style={{animationDelay: '1.5s', animationDuration: '4s', willChange: 'transform, opacity'}}></div>
-        <div className="absolute top-1/5 left-3/4 w-2 h-2 bg-cyan-300/50 dark:bg-cyan-600/30 rounded-full blur-sm animate-pulse" style={{animationDelay: '2.5s', animationDuration: '2s', willChange: 'opacity'}}></div>
-        <div className="absolute bottom-1/3 left-1/6 w-3 h-3 bg-emerald-400/35 dark:bg-emerald-700/20 rounded-full blur-sm animate-bounce" style={{animationDelay: '3s', animationDuration: '5s', willChange: 'transform'}}></div>
-        
-        {/* Dynamic grid patterns */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-emerald-100/8 to-transparent dark:via-emerald-900/4" style={{backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(16, 185, 129, 0.08) 1px, transparent 0)', backgroundSize: '50px 50px'}}></div>
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-teal-100/6 to-transparent dark:via-teal-900/3 animate-pulse" style={{backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(20, 184, 166, 0.06) 0.5px, transparent 0)', backgroundSize: '30px 30px', animationDuration: '8s', willChange: 'opacity'}}></div>
-        
-        {/* Organic flowing shapes */}
-        <div className="absolute top-0 left-1/2 w-64 h-32 bg-gradient-to-r from-emerald-200/10 via-teal-200/15 to-cyan-200/10 dark:from-emerald-800/5 dark:via-teal-800/8 dark:to-cyan-800/5 rounded-full blur-2xl transform -rotate-12 animate-pulse" style={{animationDuration: '6s', willChange: 'opacity'}}></div>
-        <div className="absolute bottom-1/6 left-0 w-48 h-24 bg-gradient-to-r from-cyan-200/12 via-emerald-200/18 to-teal-200/12 dark:from-cyan-800/6 dark:via-emerald-800/9 dark:to-teal-800/6 rounded-full blur-2xl transform rotate-45 animate-pulse" style={{animationDelay: '3s', animationDuration: '7s', willChange: 'opacity'}}></div>
-        
+
+        {/* Subtle overlay to ensure readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-50/60 to-transparent dark:via-slate-900/60"></div>
+
         {/* Subtle noise texture */}
         <div className="absolute inset-0 opacity-20 dark:opacity-10" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'1\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\' opacity=\'0.05\'/%3E%3C/svg%3E")'}}></div>
       </div>
       
       <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-36 h-36 bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 rounded-full mb-8 shadow-2xl ring-4 ring-emerald-200/50 dark:ring-emerald-700/30">
-              <span className="text-6xl animate-pulse" style={{willChange: 'opacity'}}>🧬</span>
+        <div className="max-w-6xl mx-auto">
+          {/* Hero Image Card Section */}
+          <div className="relative bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden mb-16 hover:shadow-3xl transition-shadow duration-500">
+            <div className="grid grid-cols-3 gap-0 h-[70vh] min-h-[550px]">
+              {/* Image 1 */}
+              <div className="relative overflow-hidden">
+                <img src="/home1.png" alt="Dhrishit Khandhar" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30"></div>
+              </div>
+
+              {/* Image 2 */}
+              <div className="relative overflow-hidden">
+                <img src="/r2.jpeg" alt="Dhrishit Khandhar" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30"></div>
+              </div>
+
+              {/* Image 3 */}
+              <div className="relative overflow-hidden">
+                <img src="/r6.jpeg" alt="Dhrishit Khandhar" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30"></div>
+              </div>
             </div>
-            <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent leading-tight">
-              Dhrishit Khandhar
-            </h1>
-            <p className="text-2xl text-gray-700 dark:text-gray-300 mb-4 font-medium">
-              Biology Student & Researcher
-            </p>
-            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-              Passionate about marine conservation, genetic research, and bridging the gap between science and community through education and outreach
-            </p>
+
+            {/* Text Overlay - Stays Fixed */}
+            <div className="absolute inset-0">
+              {/* Subtle dark gradient for text readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent pointer-events-none"></div>
+
+              <div className="absolute inset-0 flex flex-col items-start justify-center text-left px-16 pointer-events-none">
+                <h1 className="text-6xl font-bold text-white mb-3 leading-tight tracking-tight drop-shadow-2xl">
+                  Dhrishit Khandhar
+                </h1>
+                <p className="text-2xl text-emerald-300 font-semibold drop-shadow-lg">
+                  Marine Biology, Genetic Research & Conservation
+                </p>
+              </div>
+
+              {/* Scroll Down Button */}
+              <ScrollButton />
+            </div>
+          </div>
+
+          {/* Profile Section */}
+          <div className="text-center mb-16">
+            <div className="max-w-3xl mx-auto mb-8">
+              <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed font-light">
+                Passionate about <span className="text-emerald-600 dark:text-emerald-400 font-medium">marine conservation</span>, <span className="text-teal-600 dark:text-teal-400 font-medium">genetic research</span>, and bridging the gap between science and community through <span className="text-cyan-600 dark:text-cyan-400 font-medium">education and outreach</span>
+              </p>
+            </div>
             <div className="flex flex-wrap justify-center gap-6">
               <a 
                 href="https://www.linkedin.com/in/dhrishitk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-xl hover:shadow-2xl font-semibold flex items-center gap-3 transform hover:scale-105" style={{willChange: 'transform, box-shadow'}}
-              >
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-xl hover:shadow-2xl font-semibold flex items-center gap-3 transform hover:scale-105"               >
                 <LinkedInIcon />
                 LinkedIn
               </a>
@@ -75,8 +89,7 @@ export default function Home() {
                 href="https://www.instagram.com/the.arts_dhrishit/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl font-semibold flex items-center gap-3 transform hover:scale-105" style={{willChange: 'transform, box-shadow'}}
-              >
+                className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl font-semibold flex items-center gap-3 transform hover:scale-105"               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
@@ -86,8 +99,7 @@ export default function Home() {
                 href="https://www.instagram.com/timeandtide_mumbai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl font-semibold flex items-center gap-3 transform hover:scale-105" style={{willChange: 'transform, box-shadow'}}
-              >
+                className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl font-semibold flex items-center gap-3 transform hover:scale-105"               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
@@ -95,77 +107,76 @@ export default function Home() {
               </a>
               <a 
                 href="/resume"
-                className="border-2 border-emerald-500 text-emerald-600 dark:text-emerald-400 px-8 py-4 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-all duration-300 font-semibold hover:border-emerald-600 transform hover:scale-105 shadow-lg hover:shadow-xl" style={{willChange: 'transform, box-shadow'}}
-              >
+                className="border-2 border-emerald-500 text-emerald-600 dark:text-emerald-400 px-8 py-4 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-all duration-300 font-semibold hover:border-emerald-600 transform hover:scale-105 shadow-lg hover:shadow-xl"               >
                 Download Resume
               </a>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-            <a href="/research" className="group text-center p-8 bg-gradient-to-br from-white to-emerald-50/30 dark:from-gray-800/50 dark:to-emerald-900/10 backdrop-blur-sm rounded-2xl shadow-xl border border-emerald-200/50 dark:border-emerald-800/30 hover:border-emerald-400 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-rotate-1" style={{willChange: 'transform, box-shadow'}}>
-              <div className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg" style={{willChange: 'transform'}}>
-                <span className="text-3xl">🔬</span>
+            <a href="/research" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                <span className="text-2xl">🔬</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Research</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">Marine biology research with focus on coral reef ecosystems and conservation genetics</p>
-              <div className="mt-4 flex justify-center">
-                <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm font-medium">2 Papers Published</span>
-              </div>
-            </a>
-
-            <a href="/community" className="group text-center p-8 bg-gradient-to-br from-white to-teal-50/30 dark:from-gray-800/50 dark:to-teal-900/10 backdrop-blur-sm rounded-2xl shadow-xl border border-teal-200/50 dark:border-teal-800/30 hover:border-teal-400 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:rotate-1" style={{willChange: 'transform, box-shadow'}}>
-              <div className="w-20 h-20 bg-gradient-to-br from-teal-400 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:-rotate-12 transition-all duration-300 shadow-lg" style={{willChange: 'transform'}}>
-                <span className="text-3xl">🌱</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Community</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">Science education and environmental outreach to underserved communities</p>
-              <div className="mt-4 flex justify-center">
-                <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded-full text-sm font-medium">🏆 Earth Prize Winner</span>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Research</h3>
+              <p className="text-emerald-100 leading-relaxed text-sm">Marine biology research with focus on coral reef ecosystems and conservation genetics</p>
+              <div className="mt-3 flex justify-center">
+                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">2 Papers</span>
               </div>
             </a>
 
-            <a href="/publications" className="group text-center p-8 bg-gradient-to-br from-white to-cyan-50/30 dark:from-gray-800/50 dark:to-cyan-900/10 backdrop-blur-sm rounded-2xl shadow-xl border border-cyan-200/50 dark:border-cyan-800/30 hover:border-cyan-400 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-rotate-1" style={{willChange: 'transform, box-shadow'}}>
-              <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg" style={{willChange: 'transform'}}>
-                <span className="text-3xl">📚</span>
+            <a href="/community" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                <span className="text-2xl">🌱</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">Publications</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">Scientific publications and creative writing exploring nature and science</p>
-              <div className="mt-4 flex justify-center">
-                <span className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-sm font-medium">3 Publications</span>
-              </div>
-            </a>
-
-            <a href="/internships" className="group text-center p-8 bg-gradient-to-br from-white to-purple-50/30 dark:from-gray-800/50 dark:to-purple-900/10 backdrop-blur-sm rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/30 hover:border-purple-400 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:rotate-1" style={{willChange: 'transform, box-shadow'}}>
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:-rotate-12 transition-all duration-300 shadow-lg" style={{willChange: 'transform'}}>
-                <span className="text-3xl">🏢</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">Internships</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">Professional experience in marine research and conservation organizations</p>
-              <div className="mt-4 flex justify-center">
-                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">4+ Organizations</span>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Community</h3>
+              <p className="text-emerald-100 leading-relaxed text-sm">Science education and environmental outreach to underserved communities</p>
+              <div className="mt-3 flex justify-center">
+                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">🏆 Earth Prize Winner</span>
               </div>
             </a>
 
-            <a href="/awards" className="group text-center p-8 bg-gradient-to-br from-white to-yellow-50/30 dark:from-gray-800/50 dark:to-yellow-900/10 backdrop-blur-sm rounded-2xl shadow-xl border border-yellow-200/50 dark:border-yellow-800/30 hover:border-yellow-400 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-rotate-1" style={{willChange: 'transform, box-shadow'}}>
-              <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg" style={{willChange: 'transform'}}>
-                <span className="text-3xl">🏆</span>
+            <a href="/publications" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                <span className="text-2xl">📚</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors">Awards</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">Recognition for academic excellence and contributions to biological sciences</p>
-              <div className="mt-4 flex justify-center">
-                <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-sm font-medium">10+ Awards</span>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Publications</h3>
+              <p className="text-emerald-100 leading-relaxed text-sm">Scientific publications and creative writing exploring nature and science</p>
+              <div className="mt-3 flex justify-center">
+                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">3 Publications</span>
               </div>
             </a>
 
-            <a href="/jnis" className="group text-center p-8 bg-gradient-to-br from-white to-indigo-50/30 dark:from-gray-800/50 dark:to-indigo-900/10 backdrop-blur-sm rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/30 hover:border-indigo-400 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:rotate-1" style={{willChange: 'transform, box-shadow'}}>
-              <div className="w-20 h-20 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:-rotate-12 transition-all duration-300 shadow-lg" style={{willChange: 'transform'}}>
-                <span className="text-3xl">🏛️</span>
+            <a href="/internships" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                <span className="text-2xl">🏢</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">JNIS</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">Leadership, education, and artistic expression through scientific society</p>
-              <div className="mt-4 flex justify-center">
-                <span className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium">House Captain</span>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Internships</h3>
+              <p className="text-emerald-100 leading-relaxed text-sm">Professional experience in marine research and conservation organizations</p>
+              <div className="mt-3 flex justify-center">
+                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">3 Organizations</span>
+              </div>
+            </a>
+
+            <a href="/awards" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                <span className="text-2xl">🏆</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Awards</h3>
+              <p className="text-emerald-100 leading-relaxed text-sm">Recognition for academic excellence and contributions to biological sciences</p>
+              <div className="mt-3 flex justify-center">
+                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">10+ Awards</span>
+              </div>
+            </a>
+
+            <a href="/jnis" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                <span className="text-2xl">🏛️</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">JNIS</h3>
+              <p className="text-emerald-100 leading-relaxed text-sm">Leadership, education, and artistic expression through scientific society</p>
+              <div className="mt-3 flex justify-center">
+                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">House Captain</span>
               </div>
             </a>
           </div>
