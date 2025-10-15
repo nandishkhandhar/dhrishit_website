@@ -6,7 +6,15 @@ interface PasswordProtectionProps {
   children: React.ReactNode;
 }
 
+// Set to false to disable password protection, true to enable it
+const PASSWORD_PROTECTION_ENABLED = false;
+
 export default function PasswordProtection({ children }: PasswordProtectionProps) {
+  // If password protection is disabled, just render children directly
+  if (!PASSWORD_PROTECTION_ENABLED) {
+    return <>{children}</>;
+  }
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');

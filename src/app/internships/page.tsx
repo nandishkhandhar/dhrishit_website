@@ -27,72 +27,7 @@ export default function Internships() {
           </div>
 
           <div className="space-y-12">
-            {/* BNHS */}
-            <div className="bg-gradient-to-br from-white via-emerald-50/30 to-white dark:from-gray-800/70 dark:via-emerald-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-emerald-200/60 dark:border-emerald-800/40 hover:shadow-2xl transition-all duration-300">
-              <button
-                onClick={() => setBnhsOpen(!bnhsOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-emerald-50/80 hover:to-emerald-100/40 dark:hover:from-emerald-900/30 dark:hover:to-emerald-800/20 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
-              >
-                <div className="flex flex-col items-start gap-2 flex-1">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
-                      <Image src="/bnhslogo.png" alt="BNHS Logo" width={48} height={48} className="w-12 h-12 object-contain" />
-                    </div>
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-600 dark:from-emerald-300 dark:to-teal-300 bg-clip-text text-transparent text-left">
-                      BNHS Navi Mumbai: Urban Ecology Research
-                    </h2>
-                  </div>
-                  <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-sm">Bombay Natural History Society</span>
-                    <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">Summer 2023/2024</span>
-                  </div>
-                </div>
-                <div className={`transform transition-all duration-300 ${bnhsOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-800/60 dark:to-emerald-700/40 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </div>
-              </button>
-
-              {bnhsOpen && (
-                <>
-                  <div className="w-full h-px bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-200 dark:from-emerald-800 dark:via-emerald-600 dark:to-emerald-800 mb-8"></div>
-
-                  <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-emerald-50/50 via-teal-50/50 to-cyan-50/50 dark:from-emerald-900/10 dark:via-teal-900/10 dark:to-cyan-900/10 rounded-xl p-6 border-l-4 border-emerald-500">
-                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
-                        Conducted
-                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> biodiversity surveys and wildlife monitoring</span> in Mumbai&apos;s urban ecosystems.
-                        Assisted in research on
-                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> urban bird populations</span> and their adaptation patterns.
-                        Participated in
-                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> conservation education programs</span> for local communities.
-                        Documented flora and fauna species using field identification techniques and contributed to BNHS research database with field observations and data collection.
-                      </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-4">
-                      <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-xl p-4 border border-emerald-200/50 dark:border-emerald-700/30">
-                        <p className="text-xs text-emerald-600 dark:text-emerald-400 uppercase tracking-wide mb-1">Focus Area</p>
-                        <p className="text-sm font-bold text-gray-800 dark:text-gray-200">Urban Ecology</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-xl p-4 border border-teal-200/50 dark:border-teal-700/30">
-                        <p className="text-xs text-teal-600 dark:text-teal-400 uppercase tracking-wide mb-1">Specialty</p>
-                        <p className="text-sm font-bold text-gray-800 dark:text-gray-200">Wildlife Conservation</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 rounded-xl p-4 border border-cyan-200/50 dark:border-cyan-700/30">
-                        <p className="text-xs text-cyan-600 dark:text-cyan-400 uppercase tracking-wide mb-1">Research Type</p>
-                        <p className="text-sm font-bold text-gray-800 dark:text-gray-200">Biodiversity Monitoring</p>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-
-            {/* Coastal Impact */}
+            {/* Coastal Impact - 2025 */}
             <div className="bg-gradient-to-br from-white via-teal-50/30 to-white dark:from-gray-800/70 dark:via-teal-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-teal-200/60 dark:border-teal-800/40 hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setCoastalImpactOpen(!coastalImpactOpen)}
@@ -191,7 +126,7 @@ export default function Internships() {
               )}
             </div>
 
-            {/* MiBiome */}
+            {/* MiBiome - 2025 */}
             <div className="bg-gradient-to-br from-white via-cyan-50/30 to-white dark:from-gray-800/70 dark:via-cyan-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-cyan-200/60 dark:border-cyan-800/40 hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setMiBiomeOpen(!miBiomeOpen)}
@@ -283,6 +218,71 @@ export default function Internships() {
                           </div>
                         </div>
                       )}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* BNHS - 2023/2024 */}
+            <div className="bg-gradient-to-br from-white via-emerald-50/30 to-white dark:from-gray-800/70 dark:via-emerald-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-emerald-200/60 dark:border-emerald-800/40 hover:shadow-2xl transition-all duration-300">
+              <button
+                onClick={() => setBnhsOpen(!bnhsOpen)}
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-emerald-50/80 hover:to-emerald-100/40 dark:hover:from-emerald-900/30 dark:hover:to-emerald-800/20 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+              >
+                <div className="flex flex-col items-start gap-2 flex-1">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                      <Image src="/bnhslogo.png" alt="BNHS Logo" width={48} height={48} className="w-12 h-12 object-contain" />
+                    </div>
+                    <h2 className="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-600 dark:from-emerald-300 dark:to-teal-300 bg-clip-text text-transparent text-left">
+                      BNHS Navi Mumbai: Urban Ecology Research
+                    </h2>
+                  </div>
+                  <div className="ml-15 flex flex-wrap gap-2">
+                    <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-sm">Bombay Natural History Society</span>
+                    <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">Summer 2023/2024</span>
+                  </div>
+                </div>
+                <div className={`transform transition-all duration-300 ${bnhsOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
+                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-800/60 dark:to-emerald-700/40 rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+
+              {bnhsOpen && (
+                <>
+                  <div className="w-full h-px bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-200 dark:from-emerald-800 dark:via-emerald-600 dark:to-emerald-800 mb-8"></div>
+
+                  <div className="space-y-6 px-6 pb-6">
+                    <div className="bg-gradient-to-r from-emerald-50/50 via-teal-50/50 to-cyan-50/50 dark:from-emerald-900/10 dark:via-teal-900/10 dark:to-cyan-900/10 rounded-xl p-6 border-l-4 border-emerald-500">
+                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
+                        Conducted
+                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> biodiversity surveys and wildlife monitoring</span> in Mumbai&apos;s urban ecosystems.
+                        Assisted in research on
+                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> urban bird populations</span> and their adaptation patterns.
+                        Participated in
+                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> conservation education programs</span> for local communities.
+                        Documented flora and fauna species using field identification techniques and contributed to BNHS research database with field observations and data collection.
+                      </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-xl p-4 border border-emerald-200/50 dark:border-emerald-700/30">
+                        <p className="text-xs text-emerald-600 dark:text-emerald-400 uppercase tracking-wide mb-1">Focus Area</p>
+                        <p className="text-sm font-bold text-gray-800 dark:text-gray-200">Urban Ecology</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-xl p-4 border border-teal-200/50 dark:border-teal-700/30">
+                        <p className="text-xs text-teal-600 dark:text-teal-400 uppercase tracking-wide mb-1">Specialty</p>
+                        <p className="text-sm font-bold text-gray-800 dark:text-gray-200">Wildlife Conservation</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 rounded-xl p-4 border border-cyan-200/50 dark:border-cyan-700/30">
+                        <p className="text-xs text-cyan-600 dark:text-cyan-400 uppercase tracking-wide mb-1">Research Type</p>
+                        <p className="text-sm font-bold text-gray-800 dark:text-gray-200">Biodiversity Monitoring</p>
+                      </div>
                     </div>
                   </div>
                 </>

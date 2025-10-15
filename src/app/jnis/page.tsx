@@ -25,7 +25,85 @@ export default function JNIS() {
           </div>
 
           <div className="space-y-12">
-            {/* Tagore House Captain */}
+            {/* Art & Photography Exhibition - 2024 */}
+            <div className="bg-gradient-to-br from-white via-indigo-50/30 to-white dark:from-gray-800/70 dark:via-indigo-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-indigo-200/60 dark:border-indigo-800/40 hover:shadow-2xl transition-all duration-300">
+              <button
+                onClick={() => setArtExhibitionOpen(!artExhibitionOpen)}
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-indigo-50/80 hover:to-indigo-100/40 dark:hover:from-indigo-900/30 dark:hover:to-indigo-800/20 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+              >
+                <div className="flex flex-col items-start gap-2 flex-1">
+                  <div className="flex items-center gap-3">
+                    <h2 className="text-xl font-bold bg-gradient-to-r from-indigo-700 to-blue-600 dark:from-indigo-300 dark:to-blue-300 bg-clip-text text-transparent text-left">
+                      Art & Photography Exhibition
+                    </h2>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded text-sm">Curator & Artist</span>
+                    <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-2 py-1 rounded text-sm">Annual Event 2024</span>
+                  </div>
+                </div>
+                <div className={`transform transition-all duration-300 ${artExhibitionOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
+                  <div className="w-10 h-10 bg-gradient-to-br from-indigo-100 to-blue-200 dark:from-indigo-800/60 dark:to-blue-700/40 rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+
+              {artExhibitionOpen && (
+                <>
+                  <div className="w-full h-px bg-gradient-to-r from-indigo-200 via-indigo-400 to-indigo-200 dark:from-indigo-800 dark:via-indigo-600 dark:to-indigo-800 mb-8"></div>
+
+                  <div className="space-y-6 px-6 pb-6">
+                    <div className="bg-gradient-to-r from-indigo-50/50 via-blue-50/50 to-purple-50/50 dark:from-indigo-900/10 dark:via-blue-900/10 dark:to-purple-900/10 rounded-xl p-6 border-l-4 border-indigo-500">
+                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
+                        Organized and curated exhibitions showcasing
+                        <span className="font-semibold text-indigo-700 dark:text-indigo-400"> scientific art and nature photography</span>.
+                        Successfully sold
+                        <span className="font-semibold text-indigo-700 dark:text-indigo-400"> 15+ pieces</span> featuring marine life illustrations and underwater photography,
+                        with proceeds used for creating
+                        <span className="font-semibold text-indigo-700 dark:text-indigo-400"> Project GreytoGrow</span>.
+                      </p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20 rounded-xl p-6 border border-indigo-200/50 dark:border-indigo-700/30">
+                      <div className="flex items-center gap-3 mb-6">
+                        <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-lg flex items-center justify-center">
+                          <span className="text-white text-sm">🎨</span>
+                        </div>
+                        <h4 className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">
+                          Exhibition Gallery
+                        </h4>
+                      </div>
+
+                      <div className="space-y-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <Image src="/artex/a1.jpg" alt="Art Exhibition Piece 1" fill className="object-cover" />
+                          </div>
+                          <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <Image src="/artex/a2.jpg" alt="Art Exhibition Piece 2" fill className="object-cover" />
+                          </div>
+                          <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <Image src="/artex/a3.jpg" alt="Art Exhibition Piece 3" fill className="object-cover" />
+                          </div>
+                          <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <Image src="/artex/a4.jpg" alt="Art Exhibition Piece 4" fill className="object-cover" />
+                          </div>
+                        </div>
+
+                        <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mx-auto max-w-md">
+                          <Image src="/artex/poster.jpeg" alt="Art Exhibition Poster" fill className="object-cover" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* Tagore House Captain - 2023/24 */}
             <div className="bg-gradient-to-br from-white via-amber-50/30 to-white dark:from-gray-800/70 dark:via-amber-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-amber-200/60 dark:border-amber-800/40 hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setTagoreCaptainOpen(!tagoreCaptainOpen)}
@@ -75,7 +153,7 @@ export default function JNIS() {
               )}
             </div>
 
-            {/* Fluid Art Instructor */}
+            {/* Fluid Art Instructor - 2023 */}
             <div className="bg-gradient-to-br from-white via-teal-50/30 to-white dark:from-gray-800/70 dark:via-teal-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-teal-200/60 dark:border-teal-800/40 hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setFluidArtOpen(!fluidArtOpen)}
@@ -188,84 +266,6 @@ export default function JNIS() {
                               </div>
                             </div>
                           </video>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-
-            {/* Art & Photography Exhibition */}
-            <div className="bg-gradient-to-br from-white via-indigo-50/30 to-white dark:from-gray-800/70 dark:via-indigo-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-indigo-200/60 dark:border-indigo-800/40 hover:shadow-2xl transition-all duration-300">
-              <button
-                onClick={() => setArtExhibitionOpen(!artExhibitionOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-indigo-50/80 hover:to-indigo-100/40 dark:hover:from-indigo-900/30 dark:hover:to-indigo-800/20 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
-              >
-                <div className="flex flex-col items-start gap-2 flex-1">
-                  <div className="flex items-center gap-3">
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-indigo-700 to-blue-600 dark:from-indigo-300 dark:to-blue-300 bg-clip-text text-transparent text-left">
-                      Art & Photography Exhibition
-                    </h2>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded text-sm">Curator & Artist</span>
-                    <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-2 py-1 rounded text-sm">Annual Event 2024</span>
-                  </div>
-                </div>
-                <div className={`transform transition-all duration-300 ${artExhibitionOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-indigo-100 to-blue-200 dark:from-indigo-800/60 dark:to-blue-700/40 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </div>
-              </button>
-
-              {artExhibitionOpen && (
-                <>
-                  <div className="w-full h-px bg-gradient-to-r from-indigo-200 via-indigo-400 to-indigo-200 dark:from-indigo-800 dark:via-indigo-600 dark:to-indigo-800 mb-8"></div>
-
-                  <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-indigo-50/50 via-blue-50/50 to-purple-50/50 dark:from-indigo-900/10 dark:via-blue-900/10 dark:to-purple-900/10 rounded-xl p-6 border-l-4 border-indigo-500">
-                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
-                        Organized and curated exhibitions showcasing
-                        <span className="font-semibold text-indigo-700 dark:text-indigo-400"> scientific art and nature photography</span>.
-                        Successfully sold
-                        <span className="font-semibold text-indigo-700 dark:text-indigo-400"> 15+ pieces</span> featuring marine life illustrations and underwater photography,
-                        with proceeds used for creating
-                        <span className="font-semibold text-indigo-700 dark:text-indigo-400"> Project GreytoGrow</span>.
-                      </p>
-                    </div>
-
-                    <div className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20 rounded-xl p-6 border border-indigo-200/50 dark:border-indigo-700/30">
-                      <div className="flex items-center gap-3 mb-6">
-                        <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-lg flex items-center justify-center">
-                          <span className="text-white text-sm">🎨</span>
-                        </div>
-                        <h4 className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">
-                          Exhibition Gallery
-                        </h4>
-                      </div>
-
-                      <div className="space-y-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                          <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <Image src="/artex/a1.jpg" alt="Art Exhibition Piece 1" fill className="object-cover" />
-                          </div>
-                          <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <Image src="/artex/a2.jpg" alt="Art Exhibition Piece 2" fill className="object-cover" />
-                          </div>
-                          <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <Image src="/artex/a3.jpg" alt="Art Exhibition Piece 3" fill className="object-cover" />
-                          </div>
-                          <div className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <Image src="/artex/a4.jpg" alt="Art Exhibition Piece 4" fill className="object-cover" />
-                          </div>
-                        </div>
-
-                        <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mx-auto max-w-md">
-                          <Image src="/artex/poster.jpeg" alt="Art Exhibition Poster" fill className="object-cover" />
                         </div>
                       </div>
                     </div>

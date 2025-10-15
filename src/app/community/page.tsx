@@ -26,87 +26,7 @@ export default function Community() {
           </div>
 
           <div className="space-y-12">
-            {/* Time and Tide */}
-            <div className="bg-gradient-to-br from-white via-emerald-50/30 to-white dark:from-gray-800/70 dark:via-emerald-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-emerald-200/60 dark:border-emerald-800/40 hover:shadow-2xl transition-all duration-300">
-              <button
-                onClick={() => setTimeAndTideOpen(!timeAndTideOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-emerald-50/80 hover:to-emerald-100/40 dark:hover:from-emerald-900/30 dark:hover:to-emerald-800/20 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
-              >
-                <div className="flex flex-col items-start gap-2 flex-1">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
-                      <Image src="/timeandtidelogo.jpeg" alt="Time and Tide Logo" width={48} height={48} className="w-12 h-12 object-contain" />
-                    </div>
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-600 dark:from-emerald-300 dark:to-teal-300 bg-clip-text text-transparent text-left">
-                      Time and Tide: Marine Awareness Initiative
-                    </h2>
-                  </div>
-                  <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-sm">Marine Conservation Initiative</span>
-                    <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">Founder</span>
-                    <span className="bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-200 px-2 py-1 rounded text-sm">2024 onwards</span>
-                  </div>
-                </div>
-                <div className={`transform transition-all duration-300 ${timeAndTideOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-800/60 dark:to-emerald-700/40 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </div>
-              </button>
-
-              {timeAndTideOpen && (
-                <>
-                  <div className="w-full h-px bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-200 dark:from-emerald-800 dark:via-emerald-600 dark:to-emerald-800 mb-8"></div>
-
-                  <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-emerald-50/50 via-teal-50/50 to-cyan-50/50 dark:from-emerald-900/10 dark:via-teal-900/10 dark:to-cyan-900/10 rounded-xl p-6 border-l-4 border-emerald-500">
-                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
-                        Time and Tide is an organisation created in hopes to spark passion about the
-                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> unique biodiversity of Mumbai</span> in young marine enthusiasts. Bringing light to the ecosystems that thrive in such environments is vital for their conservation and maintenance for future generations. My goal is to help bridge the gap between
-                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> Mumbai&apos;s hidden life and public awareness</span>. Through Time and Tide, I also aim to uncover our life-teeming shores, share and gain knowledge, and connect with others who are passionate about protecting our oceans.
-                      </p>
-                    </div>
-
-                    <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-xl p-6 border border-emerald-200/50 dark:border-emerald-700/30">
-                      <div className="flex items-center gap-3 mb-6">
-                        <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center">
-                          <span className="text-white text-sm">🌊</span>
-                        </div>
-                        <h4 className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                          Marine Life Gallery
-                        </h4>
-                      </div>
-
-                      <div className="space-y-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
-                            <Image src="/r2.jpeg" alt="Time and Tide Marine Life 2" fill className="object-cover" />
-                          </div>
-                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
-                            <Image src="/r3.jpeg" alt="Time and Tide Marine Life 3" fill className="object-cover" />
-                          </div>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
-                            <Image src="/r4.jpeg" alt="Time and Tide Marine Life 4" fill className="object-cover" />
-                          </div>
-                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
-                            <Image src="/r5.jpeg" alt="Time and Tide Marine Life 5" fill className="object-cover" />
-                          </div>
-                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
-                            <Image src="/r6.jpeg" alt="Time and Tide Marine Life 6" fill className="object-cover" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-
-            {/* GreytoGrow */}
+            {/* GreytoGrow - 2025 */}
             <div className="bg-gradient-to-br from-white via-teal-50/30 to-white dark:from-gray-800/70 dark:via-teal-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-teal-200/60 dark:border-teal-800/40 hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setGreytoGrowOpen(!greytoGrowOpen)}
@@ -198,10 +118,10 @@ export default function Community() {
                       Project Showcase & Gallery
                     </h4>
                   </div>
-                  
+
                   <div className="space-y-8">
                     <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 bg-black">
-                      <iframe 
+                      <iframe
                         src="https://drive.google.com/file/d/10GfrswQ6uetxiVLicERIn67OJ7P_liOW/preview"
                         className="w-full aspect-video"
                         allow="fullscreen"
@@ -209,9 +129,9 @@ export default function Community() {
                         title="GreyToGrow Project Video"
                       ></iframe>
                     </div>
-                    
+
                     <div className="relative rounded-xl overflow-hidden shadow-2xl bg-black">
-                      <iframe 
+                      <iframe
                         src="https://www.youtube.com/embed/zCO0msrFwkU"
                         className="w-full aspect-video border-0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -219,7 +139,7 @@ export default function Community() {
                         title="GreyToGrow YouTube Video"
                       ></iframe>
                     </div>
-                    
+
                     <div className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -246,7 +166,87 @@ export default function Community() {
               )}
             </div>
 
-            {/* Saaksharta Foundation */}
+            {/* Time and Tide - 2024 */}
+            <div className="bg-gradient-to-br from-white via-emerald-50/30 to-white dark:from-gray-800/70 dark:via-emerald-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-emerald-200/60 dark:border-emerald-800/40 hover:shadow-2xl transition-all duration-300">
+              <button
+                onClick={() => setTimeAndTideOpen(!timeAndTideOpen)}
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-emerald-50/80 hover:to-emerald-100/40 dark:hover:from-emerald-900/30 dark:hover:to-emerald-800/20 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+              >
+                <div className="flex flex-col items-start gap-2 flex-1">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                      <Image src="/timeandtidelogo.jpeg" alt="Time and Tide Logo" width={48} height={48} className="w-12 h-12 object-contain" />
+                    </div>
+                    <h2 className="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-600 dark:from-emerald-300 dark:to-teal-300 bg-clip-text text-transparent text-left">
+                      Time and Tide: Marine Awareness Initiative
+                    </h2>
+                  </div>
+                  <div className="ml-15 flex flex-wrap gap-2">
+                    <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-sm">Marine Conservation Initiative</span>
+                    <span className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-sm">Founder</span>
+                    <span className="bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-200 px-2 py-1 rounded text-sm">2024 onwards</span>
+                  </div>
+                </div>
+                <div className={`transform transition-all duration-300 ${timeAndTideOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
+                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-800/60 dark:to-emerald-700/40 rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+
+              {timeAndTideOpen && (
+                <>
+                  <div className="w-full h-px bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-200 dark:from-emerald-800 dark:via-emerald-600 dark:to-emerald-800 mb-8"></div>
+
+                  <div className="space-y-6 px-6 pb-6">
+                    <div className="bg-gradient-to-r from-emerald-50/50 via-teal-50/50 to-cyan-50/50 dark:from-emerald-900/10 dark:via-teal-900/10 dark:to-cyan-900/10 rounded-xl p-6 border-l-4 border-emerald-500">
+                      <p className="text-gray-800 dark:text-gray-200 leading-relaxed text-base">
+                        Time and Tide is an organisation created in hopes to spark passion about the
+                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> unique biodiversity of Mumbai</span> in young marine enthusiasts. Bringing light to the ecosystems that thrive in such environments is vital for their conservation and maintenance for future generations. My goal is to help bridge the gap between
+                        <span className="font-semibold text-emerald-700 dark:text-emerald-400"> Mumbai&apos;s hidden life and public awareness</span>. Through Time and Tide, I also aim to uncover our life-teeming shores, share and gain knowledge, and connect with others who are passionate about protecting our oceans.
+                      </p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-xl p-6 border border-emerald-200/50 dark:border-emerald-700/30">
+                      <div className="flex items-center gap-3 mb-6">
+                        <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center">
+                          <span className="text-white text-sm">🌊</span>
+                        </div>
+                        <h4 className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                          Marine Life Gallery
+                        </h4>
+                      </div>
+
+                      <div className="space-y-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                            <Image src="/r2.jpeg" alt="Time and Tide Marine Life 2" fill className="object-cover" />
+                          </div>
+                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                            <Image src="/r3.jpeg" alt="Time and Tide Marine Life 3" fill className="object-cover" />
+                          </div>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                            <Image src="/r4.jpeg" alt="Time and Tide Marine Life 4" fill className="object-cover" />
+                          </div>
+                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                            <Image src="/r5.jpeg" alt="Time and Tide Marine Life 5" fill className="object-cover" />
+                          </div>
+                          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                            <Image src="/r6.jpeg" alt="Time and Tide Marine Life 6" fill className="object-cover" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* Saakshatra Foundation - 2024 */}
             <div className="bg-gradient-to-br from-white via-cyan-50/30 to-white dark:from-gray-800/70 dark:via-cyan-900/10 dark:to-gray-800/70 backdrop-blur-sm rounded-2xl shadow-xl border border-cyan-200/60 dark:border-cyan-800/40 hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setSaakshatraOpen(!saakshatraOpen)}
@@ -313,7 +313,7 @@ export default function Community() {
                         <div className="mt-4 rounded-lg overflow-hidden shadow-xl border-2 border-cyan-200/30 dark:border-cyan-700/30">
                           <div className="w-full h-screen max-h-[800px]">
                             <iframe
-                              src="/saaksharta.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                              src="/saakshatra.pdf#toolbar=0&navpanes=0&scrollbar=0"
                               className="w-full h-full border-0"
                               title="Saaksharta Foundation Volunteer Reflection"
                               style={{
@@ -337,11 +337,11 @@ export default function Community() {
                       Teaching Gallery
                     </h4>
                   </div>
-                  
+
                   <div className="space-y-6">
                     <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-gray-100 dark:bg-gray-700">
-                      <video 
-                        controls 
+                      <video
+                        controls
                         muted
                         loop
                         className="w-full h-full object-cover"
@@ -358,7 +358,7 @@ export default function Community() {
                         </div>
                       </video>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                         <Image src="/s1.jpeg" alt="Teaching Science at Saaksharta Foundation 1" fill className="object-contain" />
