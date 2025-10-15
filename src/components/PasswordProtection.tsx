@@ -10,11 +10,6 @@ interface PasswordProtectionProps {
 const PASSWORD_PROTECTION_ENABLED = false;
 
 export default function PasswordProtection({ children }: PasswordProtectionProps) {
-  // If password protection is disabled, just render children directly
-  if (!PASSWORD_PROTECTION_ENABLED) {
-    return <>{children}</>;
-  }
-
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -31,6 +26,11 @@ export default function PasswordProtection({ children }: PasswordProtectionProps
     }
     setIsLoading(false);
   }, []);
+
+  // If password protection is disabled, just render children directly
+  if (!PASSWORD_PROTECTION_ENABLED) {
+    return <>{children}</>;
+  }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
