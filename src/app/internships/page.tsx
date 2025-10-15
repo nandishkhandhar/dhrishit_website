@@ -205,7 +205,7 @@ export default function Internships() {
                         <div className="mt-4 rounded-lg overflow-hidden shadow-xl border-2 border-cyan-200/30 dark:border-cyan-700/30">
                           <div className="w-full h-screen max-h-[800px]">
                             <iframe
-                              src="https://view.officeapps.live.com/op/embed.aspx?src=https://dhrishitsanghvi.com/MiBiome.pptx"
+                              src="https://docs.google.com/gview?url=https://dhrishitsanghvi.com/MiBiome.pptx&embedded=true"
                               className="w-full h-full border-0"
                               title="MiBiome Research Presentation"
                               style={{
