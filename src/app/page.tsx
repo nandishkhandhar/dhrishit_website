@@ -114,69 +114,69 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-            <a href="/research" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+            <a href="/research" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 dark:from-cyan-800/80 dark:to-teal-900/80 rounded-2xl shadow-xl border-2 border-cyan-500 dark:border-cyan-700 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 dark:hover:from-cyan-700/80 dark:hover:to-teal-800/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                 <span className="text-2xl">🔬</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Research</h3>
-              <p className="text-emerald-100 leading-relaxed text-sm">Marine biology research with focus on coral reef ecosystems and conservation genetics</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Research</h3>
+              <p className="text-cyan-50 leading-relaxed text-sm">Marine biology research with focus on coral reef ecosystems and conservation genetics</p>
               <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">2 Papers</span>
+                <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">2 Papers</span>
               </div>
             </a>
 
-            <a href="/community" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+            <a href="/community" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 dark:from-cyan-800/80 dark:to-teal-900/80 rounded-2xl shadow-xl border-2 border-cyan-500 dark:border-cyan-700 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 dark:hover:from-cyan-700/80 dark:hover:to-teal-800/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                 <span className="text-2xl">🌱</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Community</h3>
-              <p className="text-emerald-100 leading-relaxed text-sm">Science education and environmental outreach to underserved communities</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Community</h3>
+              <p className="text-cyan-50 leading-relaxed text-sm">Science education and environmental outreach to underserved communities</p>
               <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">🏆 Earth Prize Winner</span>
+                <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">🏆 Earth Prize Winner</span>
               </div>
             </a>
 
-            <a href="/publications" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+            <a href="/publications" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 dark:from-teal-800/80 dark:to-cyan-900/80 rounded-2xl shadow-xl border-2 border-teal-500 dark:border-teal-700 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 dark:hover:from-teal-700/80 dark:hover:to-cyan-800/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                 <span className="text-2xl">📚</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Publications</h3>
-              <p className="text-emerald-100 leading-relaxed text-sm">Scientific publications and creative writing exploring nature and science</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Publications</h3>
+              <p className="text-teal-50 leading-relaxed text-sm">Scientific publications and creative writing exploring nature and science</p>
               <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">3 Publications</span>
+                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">3 Publications</span>
               </div>
             </a>
 
-            <a href="/internships" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+            <a href="/internships" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 dark:from-cyan-800/80 dark:to-teal-900/80 rounded-2xl shadow-xl border-2 border-cyan-500 dark:border-cyan-700 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 dark:hover:from-cyan-700/80 dark:hover:to-teal-800/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                 <span className="text-2xl">🏢</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Internships</h3>
-              <p className="text-emerald-100 leading-relaxed text-sm">Professional experience in marine research and conservation organizations</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Internships</h3>
+              <p className="text-cyan-50 leading-relaxed text-sm">Professional experience in marine research and conservation organizations</p>
               <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">3 Organizations</span>
+                <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">3 Organizations</span>
               </div>
             </a>
 
-            <a href="/awards" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+            <a href="/awards" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 dark:from-teal-800/80 dark:to-cyan-900/80 rounded-2xl shadow-xl border-2 border-teal-500 dark:border-teal-700 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 dark:hover:from-teal-700/80 dark:hover:to-cyan-800/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                 <span className="text-2xl">🏆</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">Awards</h3>
-              <p className="text-emerald-100 leading-relaxed text-sm">Recognition for academic excellence and contributions to biological sciences</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Awards</h3>
+              <p className="text-teal-50 leading-relaxed text-sm">Recognition for academic excellence and contributions to biological sciences</p>
               <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">10+ Awards</span>
+                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">10+ Awards</span>
               </div>
             </a>
 
-            <a href="/jnis" className="group text-center p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 dark:from-emerald-900/80 dark:to-emerald-950/80 rounded-2xl shadow-xl border-2 border-emerald-600 dark:border-emerald-700 hover:border-emerald-500 hover:shadow-2xl hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-800/80 dark:hover:to-emerald-900/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+            <a href="/jnis" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 dark:from-cyan-800/80 dark:to-teal-900/80 rounded-2xl shadow-xl border-2 border-cyan-500 dark:border-cyan-700 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 dark:hover:from-cyan-700/80 dark:hover:to-teal-800/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+              <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                 <span className="text-2xl">🏛️</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-200 transition-colors">JNIS</h3>
-              <p className="text-emerald-100 leading-relaxed text-sm">Leadership, education, and artistic expression through scientific society</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">JNIS</h3>
+              <p className="text-cyan-50 leading-relaxed text-sm">Leadership, education, and artistic expression through scientific society</p>
               <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-emerald-600/50 text-emerald-100 rounded-full text-xs font-medium">House Captain</span>
+                <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">House Captain</span>
               </div>
             </a>
           </div>
