@@ -26,25 +26,25 @@ export default function JNIS() {
 
           <div className="space-y-12">
             {/* Art & Photography Exhibition - 2024 */}
-            <div className="bg-white rounded-2xl shadow-lg border-2 border-indigo-100 hover:shadow-2xl hover:border-indigo-200 transition-all duration-300">
+            <div className="bg-gradient-to-br from-blue-300 to-blue-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setArtExhibitionOpen(!artExhibitionOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-indigo-50/50 rounded-2xl transition-all duration-300"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-blue-400/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
-                    <h2 className="text-xl font-bold text-indigo-700 text-left">
+                    <h2 className="text-xl font-bold text-blue-900 text-left">
                       Art & Photography Exhibition
                     </h2>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm font-medium">Curator & Artist</span>
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">Annual Event 2024</span>
+                    <span className="bg-blue-400 text-blue-900 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Curator & Artist</span>
+                    <span className="bg-blue-400 text-blue-900 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Annual Event 2024</span>
                   </div>
                 </div>
                 <div className={`transform transition-all duration-300 ${artExhibitionOpen ? 'rotate-180' : ''}`}>
-                  <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -104,25 +104,25 @@ export default function JNIS() {
             </div>
 
             {/* Tagore House Captain - 2023/24 */}
-            <div className="bg-white rounded-2xl shadow-lg border-2 border-amber-100 hover:shadow-2xl hover:border-amber-200 transition-all duration-300">
+            <div className="bg-gradient-to-br from-amber-300 to-orange-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setTagoreCaptainOpen(!tagoreCaptainOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-amber-50/50 rounded-2xl transition-all duration-300"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-amber-300/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
-                    <h2 className="text-xl font-bold text-amber-700 text-left">
+                    <h2 className="text-xl font-bold text-amber-900 text-left">
                       Tagore House Captain
                     </h2>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-amber-100 text-amber-800 px-2 py-1 rounded text-sm font-medium">Leadership Role</span>
-                    <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm font-medium">2023/24</span>
+                    <span className="bg-amber-400 text-amber-900 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Leadership Role</span>
+                    <span className="bg-amber-400 text-amber-900 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">2023/24</span>
                   </div>
                 </div>
                 <div className={`transform transition-all duration-300 ${tagoreCaptainOpen ? 'rotate-180' : ''}`}>
-                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -154,25 +154,25 @@ export default function JNIS() {
             </div>
 
             {/* Fluid Art Instructor - 2023 */}
-            <div className="bg-white rounded-2xl shadow-lg border-2 border-teal-100 hover:shadow-2xl hover:border-teal-200 transition-all duration-300">
+            <div className="bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setFluidArtOpen(!fluidArtOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-teal-50/50 rounded-2xl transition-all duration-300"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-teal-300/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
-                    <h2 className="text-xl font-bold text-teal-700 text-left">
+                    <h2 className="text-xl font-bold text-teal-900 text-left">
                       Fluid Art Instructor: School Fair
                     </h2>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded text-sm font-medium">Workshop Leader</span>
-                    <span className="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-sm font-medium">2023</span>
+                    <span className="bg-teal-300 text-teal-900 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Workshop Leader</span>
+                    <span className="bg-teal-300 text-teal-900 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">2023</span>
                   </div>
                 </div>
                 <div className={`transform transition-all duration-300 ${fluidArtOpen ? 'rotate-180' : ''}`}>
-                  <div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-teal-300 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-teal-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
