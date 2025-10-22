@@ -12,24 +12,12 @@ const LinkedInIcon = memo(function LinkedInIcon() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-emerald-50/50 to-teal-50 dark:from-slate-900 dark:via-emerald-950/30 dark:to-gray-900 relative overflow-hidden">
-      {/* Ultra-modern layered background */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Base gradient layers */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-100/40 via-transparent to-cyan-100/40 dark:from-emerald-900/20 dark:via-transparent dark:to-cyan-900/20"></div>
-        <div className="absolute inset-0 bg-gradient-to-tl from-transparent via-teal-100/30 to-transparent dark:via-teal-900/15 animate-pulse" style={{animationDuration: '4s', willChange: 'opacity'}}></div>
-
-        {/* Subtle overlay to ensure readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-50/60 to-transparent dark:via-slate-900/60"></div>
-
-        {/* Subtle noise texture */}
-        <div className="absolute inset-0 opacity-20 dark:opacity-10" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'1\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\' opacity=\'0.05\'/%3E%3C/svg%3E")'}}></div>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-emerald-100 via-teal-100 to-cyan-100 relative overflow-hidden">
       
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Hero Image Card Section */}
-          <div className="relative bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden mb-16 hover:shadow-3xl transition-shadow duration-500">
+          <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden mb-16 hover:shadow-3xl transition-shadow duration-500">
             <div className="grid grid-cols-3 gap-0 h-[70vh] min-h-[550px]">
               {/* Image 1 */}
               <div className="relative overflow-hidden">
@@ -71,9 +59,9 @@ export default function Home() {
 
           {/* Profile Section */}
           <div className="text-center mb-16">
-            <div className="max-w-3xl mx-auto mb-8">
-              <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed font-light">
-                Passionate about <span className="text-emerald-600 dark:text-emerald-400 font-medium">marine conservation</span>, <span className="text-teal-600 dark:text-teal-400 font-medium">genetic research</span>, and bridging the gap between science and community through <span className="text-cyan-600 dark:text-cyan-400 font-medium">education and outreach</span>
+            <div className="max-w-4xl mx-auto mb-8">
+              <p className="text-2xl text-gray-900 leading-relaxed font-semibold">
+                Passionate about <span className="bg-gradient-to-r from-emerald-600 to-emerald-700 bg-clip-text text-transparent">marine conservation</span>, <span className="bg-gradient-to-r from-teal-600 to-teal-700 bg-clip-text text-transparent">genetic research</span>, and bridging the gap between science and community through <span className="bg-gradient-to-r from-cyan-600 to-cyan-700 bg-clip-text text-transparent">education and outreach</span>
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
@@ -105,87 +93,95 @@ export default function Home() {
                 </svg>
                 Time and Tide
               </a>
-              <a 
+              <a
                 href="/resume"
-                className="border-2 border-emerald-500 text-emerald-600 dark:text-emerald-400 px-8 py-4 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-all duration-300 font-semibold hover:border-emerald-600 transform hover:scale-105 shadow-lg hover:shadow-xl"               >
+                className="border-2 border-emerald-500 text-emerald-600 px-8 py-4 rounded-xl hover:bg-emerald-50 transition-all duration-300 font-semibold hover:border-emerald-600 transform hover:scale-105 shadow-lg hover:shadow-xl"               >
                 Download Resume
               </a>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-            <a href="/research" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 dark:from-cyan-800/80 dark:to-teal-900/80 rounded-2xl shadow-xl border-2 border-cyan-500 dark:border-cyan-700 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 dark:hover:from-cyan-700/80 dark:hover:to-teal-800/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                <span className="text-2xl">🔬</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Research</h3>
-              <p className="text-cyan-50 leading-relaxed text-sm">Marine biology research with focus on coral reef ecosystems and conservation genetics</p>
-              <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">2 Papers</span>
-              </div>
-            </a>
+          <div className="mb-20">
+            {/* First row - 3 cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+              <a href="/research" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                  <span className="text-2xl">🔬</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Research</h3>
+                <p className="text-cyan-50 leading-relaxed text-sm">Marine biology research with focus on coral reef ecosystems and conservation genetics</p>
+                <div className="mt-3 flex justify-center">
+                  <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">2 Papers</span>
+                </div>
+              </a>
 
-            <a href="/community" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 dark:from-cyan-800/80 dark:to-teal-900/80 rounded-2xl shadow-xl border-2 border-cyan-500 dark:border-cyan-700 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 dark:hover:from-cyan-700/80 dark:hover:to-teal-800/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                <span className="text-2xl">🌱</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Community</h3>
-              <p className="text-cyan-50 leading-relaxed text-sm">Science education and environmental outreach to underserved communities</p>
-              <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">🏆 Earth Prize Winner</span>
-              </div>
-            </a>
+              <a href="/community" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                  <span className="text-2xl">🌱</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Community</h3>
+                <p className="text-cyan-50 leading-relaxed text-sm">Science education and environmental outreach to underserved communities</p>
+                <div className="mt-3 flex justify-center">
+                  <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">🏆 Earth Prize Winner</span>
+                </div>
+              </a>
 
-            <a href="/publications" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 dark:from-teal-800/80 dark:to-cyan-900/80 rounded-2xl shadow-xl border-2 border-teal-500 dark:border-teal-700 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 dark:hover:from-teal-700/80 dark:hover:to-cyan-800/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                <span className="text-2xl">📚</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Publications</h3>
-              <p className="text-teal-50 leading-relaxed text-sm">Scientific publications and creative writing exploring nature and science</p>
-              <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">3 Publications</span>
-              </div>
-            </a>
+              <a href="/publications" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 rounded-2xl shadow-xl border-2 border-teal-500 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                  <span className="text-2xl">📚</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Publications</h3>
+                <p className="text-teal-50 leading-relaxed text-sm">Scientific publications and creative writing exploring nature and science</p>
+                <div className="mt-3 flex justify-center">
+                  <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">3 Publications</span>
+                </div>
+              </a>
+            </div>
 
-            <a href="/internships" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 dark:from-cyan-800/80 dark:to-teal-900/80 rounded-2xl shadow-xl border-2 border-cyan-500 dark:border-cyan-700 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 dark:hover:from-cyan-700/80 dark:hover:to-teal-800/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                <span className="text-2xl">🏢</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Internships</h3>
-              <p className="text-cyan-50 leading-relaxed text-sm">Professional experience in marine research and conservation organizations</p>
-              <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">3 Organizations</span>
-              </div>
-            </a>
+            {/* Second row - 2 cards centered */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              <a href="/internships" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                  <span className="text-2xl">🏢</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Internships</h3>
+                <p className="text-cyan-50 leading-relaxed text-sm">Professional experience in marine research and conservation organizations</p>
+                <div className="mt-3 flex justify-center">
+                  <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">3 Organizations</span>
+                </div>
+              </a>
 
-            <a href="/awards" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 dark:from-teal-800/80 dark:to-cyan-900/80 rounded-2xl shadow-xl border-2 border-teal-500 dark:border-teal-700 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 dark:hover:from-teal-700/80 dark:hover:to-cyan-800/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                <span className="text-2xl">🏆</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Awards</h3>
-              <p className="text-teal-50 leading-relaxed text-sm">Recognition for academic excellence and contributions to biological sciences</p>
-              <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">10+ Awards</span>
-              </div>
-            </a>
+              {/* Awards card - Commented out - can be restored easily
+              <a href="/awards" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 dark:from-teal-800/80 dark:to-cyan-900/80 rounded-2xl shadow-xl border-2 border-teal-500 dark:border-teal-700 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 dark:hover:from-teal-700/80 dark:hover:to-cyan-800/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                  <span className="text-2xl">🏆</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Awards</h3>
+                <p className="text-teal-50 leading-relaxed text-sm">Recognition for academic excellence and contributions to biological sciences</p>
+                <div className="mt-3 flex justify-center">
+                  <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">10+ Awards</span>
+                </div>
+              </a>
+              */}
 
-            <a href="/jnis" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 dark:from-cyan-800/80 dark:to-teal-900/80 rounded-2xl shadow-xl border-2 border-cyan-500 dark:border-cyan-700 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 dark:hover:from-cyan-700/80 dark:hover:to-teal-800/80 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                <span className="text-2xl">🏛️</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">JNIS</h3>
-              <p className="text-cyan-50 leading-relaxed text-sm">Leadership, education, and artistic expression through scientific society</p>
-              <div className="mt-3 flex justify-center">
-                <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">House Captain</span>
-              </div>
-            </a>
+              <a href="/jnis" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                  <span className="text-2xl">🏛️</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">JNIS</h3>
+                <p className="text-cyan-50 leading-relaxed text-sm">Leadership, education, and artistic expression through scientific society</p>
+                <div className="mt-3 flex justify-center">
+                  <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">House Captain</span>
+                </div>
+              </a>
+            </div>
           </div>
 
-          <div className="bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 rounded-xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="bg-gradient-to-r from-emerald-100 to-teal-100 rounded-xl p-8 text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Exploring the intersection of biology, conservation, and community
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               From coral reef research to science tutoring, I&apos;m driven by curiosity about the natural world 
               and committed to making scientific knowledge accessible to everyone.
             </p>

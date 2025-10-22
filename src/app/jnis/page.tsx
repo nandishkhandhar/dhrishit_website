@@ -9,7 +9,7 @@ export default function JNIS() {
   const [artExhibitionOpen, setArtExhibitionOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white light" style={{ colorScheme: 'light', backgroundColor: 'white' }}>
+    <div className="min-h-screen bg-gradient-to-br from-emerald-100 via-teal-100 to-cyan-100" style={{ colorScheme: 'light' }}>
       <div className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -205,7 +205,7 @@ export default function JNIS() {
                       </div>
 
                       <div className="space-y-8">
-                        <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-gray-100 dark:bg-gray-700">
+                        <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-gray-100">
                           <video
                             controls
                             muted
@@ -217,7 +217,7 @@ export default function JNIS() {
                             <source src="/fluid-art/C9A2AC6C-27B7-4C8A-BBE2-72D8C55B24C3.mov" type="video/quicktime" />
                             <div className="flex items-center justify-center h-full">
                               <div className="text-center p-4">
-                                <p className="text-gray-600 dark:text-gray-300 mb-2">Video preview not available</p>
+                                <p className="text-gray-600 mb-2">Video preview not available</p>
                                 <a href="/fluid-art/C9A2AC6C-27B7-4C8A-BBE2-72D8C55B24C3.mov" className="text-teal-600 hover:text-teal-500 underline">
                                   Download video
                                 </a>
@@ -247,7 +247,7 @@ export default function JNIS() {
                           </div>
                         </div>
 
-                        <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-gray-100 dark:bg-gray-700">
+                        <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-gray-100">
                           <video
                             controls
                             muted
@@ -259,7 +259,7 @@ export default function JNIS() {
                             <source src="/fluid-art/310F4EE6-1CBF-4653-80F4-709344CECC3C.mov" type="video/quicktime" />
                             <div className="flex items-center justify-center h-full">
                               <div className="text-center p-4">
-                                <p className="text-gray-600 dark:text-gray-300 mb-2">Video preview not available</p>
+                                <p className="text-gray-600 mb-2">Video preview not available</p>
                                 <a href="/fluid-art/310F4EE6-1CBF-4653-80F4-709344CECC3C.mov" className="text-teal-600 hover:text-teal-500 underline">
                                   Download video
                                 </a>
