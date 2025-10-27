@@ -28,28 +28,28 @@ export default function Internships() {
 
           <div className="space-y-12">
             {/* Coastal Impact - 2025 */}
-            <div className="bg-gradient-to-br from-white via-teal-50/30 to-white backdrop-blur-sm rounded-2xl shadow-xl border border-teal-200/60 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setCoastalImpactOpen(!coastalImpactOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-teal-100/40 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-teal-300/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
                       <Image src="/coastalimpactlogo.jpeg" alt="Coastal Impact Logo" width={48} height={48} className="w-12 h-12 object-contain" />
                     </div>
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-teal-700 to-cyan-600 bg-clip-text text-transparent text-left">
+                    <h2 className="text-xl font-bold text-gray-900 text-left">
                       Coastal Impact NGO Goa: Marine Research
                     </h2>
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded text-sm">Marine Research Intern</span>
-                    <span className="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-sm">Summer 2025</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Marine Research Intern</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Summer 2025</span>
                   </div>
                 </div>
-                <div className={`transform transition-all duration-300 ${coastalImpactOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-teal-100 to-cyan-200 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`transform transition-all duration-300 ${coastalImpactOpen ? 'rotate-180' : ''}`}>
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -58,11 +58,11 @@ export default function Internships() {
 
               {coastalImpactOpen && (
                 <>
-                  <div className="w-full h-px bg-gradient-to-r from-teal-200 via-cyan-400 to-teal-200 mb-8"></div>
+                  <div className="w-full h-px bg-gradient-to-r from-transparent via-teal-200 to-transparent mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-teal-50/50 via-cyan-50/50 to-blue-50/50 rounded-xl p-6 border-l-4 border-teal-500">
-                      <p className="text-gray-800 leading-relaxed text-base">
+                    <div className="bg-teal-50/50 rounded-xl p-6 border-l-4 border-teal-400">
+                      <p className="text-gray-700 leading-relaxed text-base">
                         Interned at
                         <span className="font-semibold text-teal-700"> Coastal Impact NGO</span> (established 2009) which studies and monitors India&apos;s marine ecosystems, supporting awareness, outreach, research, and conservation initiatives.
                         Conducted
@@ -72,20 +72,6 @@ export default function Internships() {
                       </p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-4">
-                      <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200/50">
-                        <p className="text-xs text-teal-600 uppercase tracking-wide mb-1">Focus Area</p>
-                        <p className="text-sm font-bold text-gray-800">Marine Biology</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 border border-cyan-200/50">
-                        <p className="text-xs text-cyan-600 uppercase tracking-wide mb-1">Specialty</p>
-                        <p className="text-sm font-bold text-gray-800">Coral Restoration</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200/50">
-                        <p className="text-xs text-blue-600 uppercase tracking-wide mb-1">Research Type</p>
-                        <p className="text-sm font-bold text-gray-800">Coastal Ecology</p>
-                      </div>
-                    </div>
 
                     <div className="mt-6">
                       <button
@@ -127,28 +113,28 @@ export default function Internships() {
             </div>
 
             {/* MiBiome - 2025 */}
-            <div className="bg-gradient-to-br from-white via-purple-50/30 to-white backdrop-blur-sm rounded-2xl shadow-xl border border-purple-200/60 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setMiBiomeOpen(!miBiomeOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-purple-50/80 hover:to-purple-100/40 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-teal-300/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
                       <Image src="/mibiomelogo.jpeg" alt="MiBiome Logo" width={48} height={48} className="w-12 h-12 object-contain" />
                     </div>
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-purple-700 to-violet-600 bg-clip-text text-transparent text-left">
+                    <h2 className="text-xl font-bold text-gray-900 text-left">
                       MiBiome Lab Mumbai: Genomics Research
                     </h2>
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Research Assistant</span>
-                    <span className="bg-violet-100 text-violet-800 px-2 py-1 rounded text-sm">Summer 2025</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Research Assistant</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Summer 2025</span>
                   </div>
                 </div>
-                <div className={`transform transition-all duration-300 ${miBiomeOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-purple-100 to-violet-200 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`transform transition-all duration-300 ${miBiomeOpen ? 'rotate-180' : ''}`}>
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -157,33 +143,19 @@ export default function Internships() {
 
               {miBiomeOpen && (
                 <>
-                  <div className="w-full h-px bg-gradient-to-r from-purple-200 via-violet-400 to-purple-200 mb-8"></div>
+                  <div className="w-full h-px bg-gradient-to-r from-transparent via-teal-200 to-transparent mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-purple-50/50 via-violet-50/50 to-fuchsia-50/50 rounded-xl p-6 border-l-4 border-purple-500">
-                      <p className="text-gray-800 leading-relaxed text-base">
-                        <span className="font-semibold text-purple-700">MiBiome</span> develops cutting-edge genomics technologies to democratize genetic research and advance precision medicine.
+                    <div className="bg-teal-50/50 rounded-xl p-6 border-l-4 border-teal-400">
+                      <p className="text-gray-700 leading-relaxed text-base">
+                        <span className="font-semibold text-teal-700">MiBiome</span> develops cutting-edge genomics technologies to democratize genetic research and advance precision medicine.
                         Gained expertise in
-                        <span className="font-semibold text-purple-700"> DNA sequencing methodologies</span> including
-                        <span className="font-semibold text-purple-700"> Sanger sequencing</span> and next-generation
-                        <span className="font-semibold text-purple-700"> Illumina sequencing techniques</span>.
+                        <span className="font-semibold text-teal-700"> DNA sequencing methodologies</span> including
+                        <span className="font-semibold text-teal-700"> Sanger sequencing</span> and next-generation
+                        <span className="font-semibold text-teal-700"> Illumina sequencing techniques</span>.
                       </p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-4">
-                      <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-4 border border-purple-200/50">
-                        <p className="text-xs text-purple-600 uppercase tracking-wide mb-1">Focus Area</p>
-                        <p className="text-sm font-bold text-gray-800">Microbiome Research</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-violet-50 to-fuchsia-50 rounded-xl p-4 border border-violet-200/50">
-                        <p className="text-xs text-violet-600 uppercase tracking-wide mb-1">Specialty</p>
-                        <p className="text-sm font-bold text-gray-800">Bioinformatics</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-fuchsia-50 to-pink-50 rounded-xl p-4 border border-fuchsia-200/50">
-                        <p className="text-xs text-fuchsia-600 uppercase tracking-wide mb-1">Research Type</p>
-                        <p className="text-sm font-bold text-gray-800">Molecular Biology</p>
-                      </div>
-                    </div>
 
                     <div className="mt-6">
                       <button
@@ -226,28 +198,28 @@ export default function Internships() {
             </div>
 
             {/* BNHS - 2023/2024 */}
-            <div className="bg-gradient-to-br from-white via-emerald-50/30 to-white backdrop-blur-sm rounded-2xl shadow-xl border border-emerald-200/60 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setBnhsOpen(!bnhsOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-emerald-50/80 hover:to-emerald-100/40 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-teal-300/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
                       <Image src="/bnhslogo.png" alt="BNHS Logo" width={48} height={48} className="w-12 h-12 object-contain" />
                     </div>
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent text-left">
+                    <h2 className="text-xl font-bold text-gray-900 text-left">
                       BNHS Navi Mumbai: Urban Ecology Research
                     </h2>
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-emerald-100 text-emerald-800 px-2 py-1 rounded text-sm">Bombay Natural History Society</span>
-                    <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded text-sm">Summer 2023/2024</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Bombay Natural History Society</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Summer 2023/2024</span>
                   </div>
                 </div>
-                <div className={`transform transition-all duration-300 ${bnhsOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`transform transition-all duration-300 ${bnhsOpen ? 'rotate-180' : ''}`}>
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -256,35 +228,21 @@ export default function Internships() {
 
               {bnhsOpen && (
                 <>
-                  <div className="w-full h-px bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-200 mb-8"></div>
+                  <div className="w-full h-px bg-gradient-to-r from-transparent via-teal-200 to-transparent mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-emerald-50/50 via-teal-50/50 to-cyan-50/50 rounded-xl p-6 border-l-4 border-emerald-500">
-                      <p className="text-gray-800 leading-relaxed text-base">
+                    <div className="bg-teal-50/50 rounded-xl p-6 border-l-4 border-teal-400">
+                      <p className="text-gray-700 leading-relaxed text-base">
                         Conducted
-                        <span className="font-semibold text-emerald-700"> biodiversity surveys and wildlife monitoring</span> in Mumbai&apos;s urban ecosystems.
+                        <span className="font-semibold text-teal-700"> biodiversity surveys and wildlife monitoring</span> in Mumbai&apos;s urban ecosystems.
                         Assisted in research on
-                        <span className="font-semibold text-emerald-700"> urban bird populations</span> and their adaptation patterns.
+                        <span className="font-semibold text-teal-700"> urban bird populations</span> and their adaptation patterns.
                         Participated in
-                        <span className="font-semibold text-emerald-700"> conservation education programs</span> for local communities.
+                        <span className="font-semibold text-teal-700"> conservation education programs</span> for local communities.
                         Documented flora and fauna species using field identification techniques and contributed to BNHS research database with field observations and data collection.
                       </p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-4">
-                      <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-200/50">
-                        <p className="text-xs text-emerald-600 uppercase tracking-wide mb-1">Focus Area</p>
-                        <p className="text-sm font-bold text-gray-800">Urban Ecology</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200/50">
-                        <p className="text-xs text-teal-600 uppercase tracking-wide mb-1">Specialty</p>
-                        <p className="text-sm font-bold text-gray-800">Wildlife Conservation</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 border border-cyan-200/50">
-                        <p className="text-xs text-cyan-600 uppercase tracking-wide mb-1">Research Type</p>
-                        <p className="text-sm font-bold text-gray-800">Biodiversity Monitoring</p>
-                      </div>
-                    </div>
                   </div>
                 </>
               )}

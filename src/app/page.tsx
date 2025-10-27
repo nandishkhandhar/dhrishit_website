@@ -65,15 +65,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
-              <a 
-                href="https://www.linkedin.com/in/dhrishitk/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-xl hover:shadow-2xl font-semibold flex items-center gap-3 transform hover:scale-105"               >
-                <LinkedInIcon />
-                LinkedIn
-              </a>
-              <a 
+              <a
                 href="https://www.instagram.com/the.arts_dhrishit/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -83,7 +75,7 @@ export default function Home() {
                 </svg>
                 Art Portfolio
               </a>
-              <a 
+              <a
                 href="https://www.instagram.com/timeandtide_mumbai/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -102,8 +94,8 @@ export default function Home() {
           </div>
 
           <div className="mb-20">
-            {/* First row - 3 cards */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {/* Symmetrical 2x2 grid */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <a href="/research" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
                 <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                   <span className="text-2xl">🔬</span>
@@ -115,7 +107,18 @@ export default function Home() {
                 </div>
               </a>
 
-              <a href="/community" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+              <a href="/publications" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 rounded-2xl shadow-xl border-2 border-teal-500 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                  <span className="text-2xl">📚</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Publications</h3>
+                <p className="text-teal-50 leading-relaxed text-sm">Scientific publications and creative writing exploring nature and science</p>
+                <div className="mt-3 flex justify-center">
+                  <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">3 Publications</span>
+                </div>
+              </a>
+
+              <a href="/community" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
                 <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                   <span className="text-2xl">🌱</span>
                 </div>
@@ -126,28 +129,14 @@ export default function Home() {
                 </div>
               </a>
 
-              <a href="/publications" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 rounded-2xl shadow-xl border-2 border-teal-500 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+              <a href="/internships" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 rounded-2xl shadow-xl border-2 border-teal-500 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
                 <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                  <span className="text-2xl">📚</span>
+                  <span className="text-2xl">💼</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Publications</h3>
-                <p className="text-teal-50 leading-relaxed text-sm">Scientific publications and creative writing exploring nature and science</p>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-colors">Internships</h3>
+                <p className="text-teal-50 leading-relaxed text-sm">Professional experience in marine research and conservation organizations</p>
                 <div className="mt-3 flex justify-center">
-                  <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">3 Publications</span>
-                </div>
-              </a>
-            </div>
-
-            {/* Second row - 2 cards centered */}
-            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-              <a href="/internships" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
-                <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                  <span className="text-2xl">🏢</span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Internships</h3>
-                <p className="text-cyan-50 leading-relaxed text-sm">Professional experience in marine research and conservation organizations</p>
-                <div className="mt-3 flex justify-center">
-                  <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">3 Organizations</span>
+                  <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">3 Organizations</span>
                 </div>
               </a>
 
@@ -164,6 +153,7 @@ export default function Home() {
               </a>
               */}
 
+              {/* JNIS card - Commented out - can be restored easily
               <a href="/jnis" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
                 <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                   <span className="text-2xl">🏛️</span>
@@ -174,17 +164,8 @@ export default function Home() {
                   <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">House Captain</span>
                 </div>
               </a>
+              */}
             </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-emerald-100 to-teal-100 rounded-xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Exploring the intersection of biology, conservation, and community
-            </h2>
-            <p className="text-gray-700 max-w-2xl mx-auto">
-              From coral reef research to science tutoring, I&apos;m driven by curiosity about the natural world 
-              and committed to making scientific knowledge accessible to everyone.
-            </p>
           </div>
         </div>
       </div>

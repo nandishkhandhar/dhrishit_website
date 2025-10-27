@@ -27,29 +27,29 @@ export default function Community() {
 
           <div className="space-y-12">
             {/* GreytoGrow - 2025 */}
-            <div className="bg-gradient-to-br from-white via-teal-50/30 to-white backdrop-blur-sm rounded-2xl shadow-xl border border-teal-200/60 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setGreytoGrowOpen(!greytoGrowOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-teal-100/40 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-teal-300/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
                       <Image src="/greylogo.png" alt="GreytoGrow Logo" width={48} height={48} className="w-12 h-12 object-contain" />
                     </div>
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-teal-700 to-emerald-600 bg-clip-text text-transparent text-left">
+                    <h2 className="text-xl font-bold text-gray-900 text-left">
                       Project GreytoGrow: Wetland-Inspired Water Purification
                     </h2>
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded text-sm">Founder</span>
-                    <span className="bg-amber-100 text-amber-800 px-2 py-1 rounded text-sm font-bold">🏆 Earth Prize Asian Scholar Award</span>
-                    <span className="bg-emerald-100 text-emerald-800 px-2 py-1 rounded text-sm">2025</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Founder</span>
+                    <span className="bg-amber-600 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">🏆 Earth Prize Asian Scholar Award</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">2025</span>
                   </div>
                 </div>
-                <div className={`transform transition-all duration-300 ${greytoGrowOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-teal-100 to-emerald-200 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`transform transition-all duration-300 ${greytoGrowOpen ? 'rotate-180' : ''}`}>
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -58,11 +58,11 @@ export default function Community() {
 
               {greytoGrowOpen && (
                 <>
-                  <div className="w-full h-px bg-gradient-to-r from-teal-200 via-emerald-400 to-teal-200 mb-8"></div>
+                  <div className="w-full h-px bg-gradient-to-r from-transparent via-teal-200 to-transparent mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-teal-50/50 via-emerald-50/50 to-cyan-50/50 rounded-xl p-6 border-l-4 border-teal-500">
-                      <p className="text-gray-800 leading-relaxed text-base">
+                    <div className="bg-teal-50/50 rounded-xl p-6 border-l-4 border-teal-400">
+                      <p className="text-gray-700 leading-relaxed text-base">
                         Created a
                         <span className="font-semibold text-teal-700"> 3-step prototype</span> to purify and reuse greywater, inspired by wetland ecosystems,
                         designed to purify greywater for
@@ -167,29 +167,29 @@ export default function Community() {
             </div>
 
             {/* Time and Tide - 2024 */}
-            <div className="bg-gradient-to-br from-white via-emerald-50/30 to-white backdrop-blur-sm rounded-2xl shadow-xl border border-emerald-200/60 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setTimeAndTideOpen(!timeAndTideOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-emerald-50/80 hover:to-emerald-100/40 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-teal-300/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
                       <Image src="/timeandtidelogo.jpeg" alt="Time and Tide Logo" width={48} height={48} className="w-12 h-12 object-contain" />
                     </div>
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent text-left">
+                    <h2 className="text-xl font-bold text-gray-900 text-left">
                       Time and Tide: Marine Awareness Initiative
                     </h2>
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-emerald-100 text-emerald-800 px-2 py-1 rounded text-sm">Marine Conservation Initiative</span>
-                    <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded text-sm">Founder</span>
-                    <span className="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-sm">2024 onwards</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Marine Conservation Initiative</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Founder</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">2024 onwards</span>
                   </div>
                 </div>
-                <div className={`transform transition-all duration-300 ${timeAndTideOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`transform transition-all duration-300 ${timeAndTideOpen ? 'rotate-180' : ''}`}>
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -198,14 +198,14 @@ export default function Community() {
 
               {timeAndTideOpen && (
                 <>
-                  <div className="w-full h-px bg-gradient-to-r from-emerald-200 via-emerald-400 to-emerald-200 mb-8"></div>
+                  <div className="w-full h-px bg-gradient-to-r from-transparent via-teal-200 to-transparent mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-emerald-50/50 via-teal-50/50 to-cyan-50/50 rounded-xl p-6 border-l-4 border-emerald-500">
-                      <p className="text-gray-800 leading-relaxed text-base">
+                    <div className="bg-teal-50/50 rounded-xl p-6 border-l-4 border-teal-400">
+                      <p className="text-gray-700 leading-relaxed text-base">
                         Time and Tide is an organisation created in hopes to spark passion about the
-                        <span className="font-semibold text-emerald-700"> unique biodiversity of Mumbai</span> in young marine enthusiasts. Bringing light to the ecosystems that thrive in such environments is vital for their conservation and maintenance for future generations. My goal is to help bridge the gap between
-                        <span className="font-semibold text-emerald-700"> Mumbai&apos;s hidden life and public awareness</span>. Through Time and Tide, I also aim to uncover our life-teeming shores, share and gain knowledge, and connect with others who are passionate about protecting our oceans.
+                        <span className="font-semibold text-teal-700"> unique biodiversity of Mumbai</span> in young marine enthusiasts. Bringing light to the ecosystems that thrive in such environments is vital for their conservation and maintenance for future generations. My goal is to help bridge the gap between
+                        <span className="font-semibold text-teal-700"> Mumbai&apos;s hidden life and public awareness</span>. Through Time and Tide, I also aim to uncover our life-teeming shores, share and gain knowledge, and connect with others who are passionate about protecting our oceans.
                       </p>
                     </div>
 
@@ -247,29 +247,29 @@ export default function Community() {
             </div>
 
             {/* Saakshatra Foundation - 2024 */}
-            <div className="bg-gradient-to-br from-white via-cyan-50/30 to-white backdrop-blur-sm rounded-2xl shadow-xl border border-cyan-200/60 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <button
                 onClick={() => setSaakshatraOpen(!saakshatraOpen)}
-                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-gradient-to-r hover:from-cyan-50/80 hover:to-cyan-100/40 rounded-2xl transition-all duration-300 transform hover:scale-[1.01]"
+                className="w-full flex items-center justify-between gap-4 p-6 group hover:bg-teal-300/50 rounded-2xl transition-all duration-300"
               >
                 <div className="flex flex-col items-start gap-2 flex-1">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
                       <Image src="/saakshartalogo.jpg" alt="Saaksharta Foundation Logo" width={48} height={48} className="w-12 h-12 object-contain" />
                     </div>
-                    <h2 className="text-xl font-bold bg-gradient-to-r from-cyan-700 to-blue-600 bg-clip-text text-transparent text-left">
+                    <h2 className="text-xl font-bold text-gray-900 text-left">
                       Saaksharta Foundation: Science Education Volunteer
                     </h2>
                   </div>
                   <div className="ml-15 flex flex-wrap gap-2">
-                    <span className="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-sm">Saaksharta Foundation</span>
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Volunteer Educator</span>
-                    <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">2024 onwards</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Saaksharta Foundation</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">Volunteer Educator</span>
+                    <span className="bg-teal-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm">2024 onwards</span>
                   </div>
                 </div>
-                <div className={`transform transition-all duration-300 ${saakshatraOpen ? 'rotate-180' : ''} group-hover:scale-110`}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-cyan-100 to-blue-200 rounded-full flex items-center justify-center shadow-md">
-                    <svg className="w-5 h-5 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`transform transition-all duration-300 ${saakshatraOpen ? 'rotate-180' : ''}`}>
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-5 h-5 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -278,17 +278,17 @@ export default function Community() {
 
               {saakshatraOpen && (
                 <>
-                  <div className="w-full h-px bg-gradient-to-r from-cyan-200 via-blue-400 to-cyan-200 mb-8"></div>
+                  <div className="w-full h-px bg-gradient-to-r from-transparent via-teal-200 to-transparent mb-8"></div>
 
                   <div className="space-y-6 px-6 pb-6">
-                    <div className="bg-gradient-to-r from-cyan-50/50 via-blue-50/50 to-indigo-50/50 rounded-xl p-6 border-l-4 border-cyan-500 mb-6">
-                      <p className="text-gray-800 leading-relaxed text-base">
+                    <div className="bg-teal-50/50 rounded-xl p-6 border-l-4 border-teal-400 mb-6">
+                      <p className="text-gray-700 leading-relaxed text-base">
                         Volunteer at
-                        <span className="font-semibold text-cyan-700"> Saaksharta Foundation</span>, a Mumbai-based non-profit NGO inclined towards bettering lives
+                        <span className="font-semibold text-teal-700"> Saaksharta Foundation</span>, a Mumbai-based non-profit NGO inclined towards bettering lives
                         of the underprivileged community. Teaching science to
-                        <span className="font-semibold text-cyan-700"> 40+ Grade 7 students</span> through creative experiments
+                        <span className="font-semibold text-teal-700"> 40+ Grade 7 students</span> through creative experiments
                         and hands-on learning. Introduced
-                        <span className="font-semibold text-cyan-700"> marine conservation</span> through intertidal walks and shared the
+                        <span className="font-semibold text-teal-700"> marine conservation</span> through intertidal walks and shared the
                         award-winning GreytoGrow project with students and their families.
                       </p>
                     </div>
