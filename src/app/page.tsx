@@ -94,8 +94,8 @@ export default function Home() {
           </div>
 
           <div className="mb-20">
-            {/* Symmetrical 2x2 grid */}
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Grid layout: 3 cards on top, 2 on bottom */}
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-8">
               <a href="/research" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
                 <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                   <span className="text-2xl">🔬</span>
@@ -129,6 +129,10 @@ export default function Home() {
                 </div>
               </a>
 
+            </div>
+
+            {/* Second row: 2 cards centered */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <a href="/internships" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 rounded-2xl shadow-xl border-2 border-teal-500 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
                 <div className="w-14 h-14 bg-gradient-to-br from-teal-300 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
                   <span className="text-2xl">💼</span>
@@ -139,6 +143,18 @@ export default function Home() {
                   <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-xs font-medium">3 Organizations</span>
                 </div>
               </a>
+
+              <a href="/jnis" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
+                  <span className="text-2xl">🏛️</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">Life at JNIS</h3>
+                <p className="text-cyan-50 leading-relaxed text-sm">My high school journey</p>
+                <div className="mt-3 flex justify-center">
+                  <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">House Captain</span>
+                </div>
+              </a>
+            </div>
 
               {/* Awards card - Commented out - can be restored easily
               <a href="/awards" className="group text-center p-6 bg-gradient-to-br from-teal-600 to-cyan-700 dark:from-teal-800/80 dark:to-cyan-900/80 rounded-2xl shadow-xl border-2 border-teal-500 dark:border-teal-700 hover:border-cyan-400 hover:shadow-2xl hover:from-teal-500 hover:to-cyan-600 dark:hover:from-teal-700/80 dark:hover:to-cyan-800/80 transition-all duration-500 transform hover:scale-105 hover:-rotate-1">
@@ -153,19 +169,6 @@ export default function Home() {
               </a>
               */}
 
-              {/* JNIS card - Commented out - can be restored easily
-              <a href="/jnis" className="group text-center p-6 bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl shadow-xl border-2 border-cyan-500 hover:border-teal-400 hover:shadow-2xl hover:from-cyan-500 hover:to-teal-600 transition-all duration-500 transform hover:scale-105 hover:rotate-1">
-                <div className="w-14 h-14 bg-gradient-to-br from-cyan-300 to-teal-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 shadow-lg">
-                  <span className="text-2xl">🏛️</span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-teal-100 transition-colors">JNIS</h3>
-                <p className="text-cyan-50 leading-relaxed text-sm">Leadership, education, and artistic expression through scientific society</p>
-                <div className="mt-3 flex justify-center">
-                  <span className="px-3 py-1 bg-teal-500/50 text-white rounded-full text-xs font-medium">House Captain</span>
-                </div>
-              </a>
-              */}
-            </div>
           </div>
         </div>
       </div>
