@@ -10,7 +10,7 @@ export default function Publications() {
   const [bookOpen, setBookOpen] = useState(false);
   const [vinculocaOpen, setVinculocaOpen] = useState(false);
 
-  const jumpToPage = (page) => {
+  const jumpToPage = (page: number) => {
     setHornbillPdfPage(page);
     setHornbillPdfKey(prev => prev + 1);
   };
