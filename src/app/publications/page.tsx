@@ -4,8 +4,17 @@ import { useState } from 'react';
 
 export default function Publications() {
   const [hornbillOpen, setHornbillOpen] = useState(false);
+  const [hornbillPdfOpen, setHornbillPdfOpen] = useState(false);
+  const [hornbillPdfPage, setHornbillPdfPage] = useState(1);
+  const [hornbillPdfKey, setHornbillPdfKey] = useState(0);
   const [bookOpen, setBookOpen] = useState(false);
   const [vinculocaOpen, setVinculocaOpen] = useState(false);
+
+  const jumpToPage = (page) => {
+    setHornbillPdfPage(page);
+    setHornbillPdfKey(prev => prev + 1);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-100 via-teal-100 to-cyan-100">
       <div className="container mx-auto px-6 py-20">
@@ -82,6 +91,55 @@ export default function Publications() {
                         <li>• Underwater ecosystem insights</li>
                         <li>• Conservation perspectives on island marine life</li>
                       </ul>
+                    </div>
+
+                    <div className="mt-6">
+                      <button
+                        onClick={() => setHornbillPdfOpen(!hornbillPdfOpen)}
+                        className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white rounded-xl transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] border-2 border-teal-400/30"
+                      >
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <span>View Full Magazine Article</span>
+                        <div className={`transform transition-all duration-300 ${hornbillPdfOpen ? 'rotate-180' : ''}`}>
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </button>
+
+                      {hornbillPdfOpen && (
+                        <div className="mt-4 space-y-4">
+                          <div className="flex gap-3">
+                            <button
+                              onClick={() => jumpToPage(24)}
+                              className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-lg transition-all duration-300 font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02]"
+                            >
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                              </svg>
+                              <span>Jump to "Underwater Realms" (Page 22)</span>
+                            </button>
+                          </div>
+                          <div className="rounded-lg overflow-hidden shadow-xl border-2 border-teal-200/30 max-w-3xl mx-auto">
+                            <div className="w-full h-[750px]">
+                              <iframe
+                                key={`hornbill-${hornbillPdfKey}`}
+                                src={`/hornbillarticle.pdf#page=${hornbillPdfPage}&toolbar=0&navpanes=0&scrollbar=0`}
+                                className="w-full h-full border-0"
+                                title="Hornbill Magazine Article - Diving Experiences"
+                                style={{
+                                  display: 'block',
+                                  background: 'white',
+                                  border: 'none',
+                                  outline: 'none'
+                                }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </>

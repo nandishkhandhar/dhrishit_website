@@ -313,7 +313,7 @@ export default function Community() {
                         <div className="mt-4 rounded-lg overflow-hidden shadow-xl border-2 border-cyan-200/30">
                           <div className="w-full h-screen max-h-[800px]">
                             <iframe
-                              src="/saakshatra.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                              src="/saaksharta.pdf?v=1#toolbar=0&navpanes=0&scrollbar=0"
                               className="w-full h-full border-0"
                               title="Saaksharta Foundation Volunteer Reflection"
                               style={{
