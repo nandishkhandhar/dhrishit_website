@@ -13,7 +13,7 @@ export default function Resume() {
             </h1>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="/resume.pdf?v=2"
+                href="/resume.pdf?v=3"
                 download="Dhrishit_Khandhar_Resume.pdf"
                 className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-xl hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-xl font-medium flex items-center justify-center gap-3 transform hover:scale-105"
               >
@@ -21,7 +21,7 @@ export default function Resume() {
                 Download PDF Resume
               </a>
               <a
-                href="/resume.pdf?v=2"
+                href="/resume.pdf?v=3"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-emerald-500 text-emerald-600 px-8 py-4 rounded-xl hover:bg-emerald-50 transition-all duration-300 font-medium flex items-center justify-center gap-3 transform hover:scale-105"
@@ -71,7 +71,7 @@ export default function Resume() {
           <div className="bg-white backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden border border-emerald-200/50">
             <div className="w-full h-screen max-h-[1200px]">
               <iframe
-                src="/resume.pdf?v=2#toolbar=0&navpanes=0&scrollbar=0"
+                src="/resume.pdf?v=3#toolbar=0&navpanes=0&scrollbar=0"
                 className="w-full h-full border-0"
                 title="Dhrishit Khandhar Resume"
                 style={{
