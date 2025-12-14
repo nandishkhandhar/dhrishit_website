@@ -66,6 +66,15 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap justify-center gap-6">
               <a
+                href="https://www.linkedin.com/in/dhrishitk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-xl hover:shadow-2xl font-semibold flex items-center gap-3 transform hover:scale-105"
+              >
+                <LinkedInIcon />
+                LinkedIn
+              </a>
+              <a
                 href="https://www.instagram.com/the.arts_dhrishit/"
                 target="_blank"
                 rel="noopener noreferrer"
