@@ -7,7 +7,7 @@ interface PasswordProtectionProps {
 }
 
 // Set to false to disable password protection, true to enable it
-const PASSWORD_PROTECTION_ENABLED = false;
+const PASSWORD_PROTECTION_ENABLED = true;
 
 export default function PasswordProtection({ children }: PasswordProtectionProps) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -16,7 +16,7 @@ export default function PasswordProtection({ children }: PasswordProtectionProps
   const [isLoading, setIsLoading] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
 
-  const CORRECT_PASSWORD = 'Dhrishit0316$';
+  const CORRECT_PASSWORD = 'Nandhri0316$';
 
   useEffect(() => {
     // Check if user is already authenticated in this session
